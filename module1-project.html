@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   
+    <title>Customized Teacher Planner</title>
+    
+    <link rel="stylesheet" type="text/css" href="module1-project.css"/>
+
+</head>
+
+<body>
+   
+    <div>
+       
+        <h1 id="randomPhrase"></h1>
+    
+    </div>
+    
+    <div class="container">
+
+        <div class="containerColumn1">
+
+            <div class="card myGreatDay">
+              
+                <p><strong>My</strong> Great Day</p>
+           
+            </div>
+
+            <div id="calendar" class="card">
+              
+                <p>Monthly Calendar</p>
+               
+                <div class="arrowImg">
+                 
+                    <img src="images/arrow.png" alt="arrow">
+                
+                </div>
+            
+            </div>
+       
+        </div>
+
+        <div class="containerColumn2">
+            
+            <div class="card specialDays">
+              
+                <div class="specialDaysHome">
+                   
+                    <div id="specialDaysSnippet">
+
+                        <p id="specialDaysUpdate">
+                            my birthday
+                        </p>
+                   
+                    </div>
+                  
+                    <p>Special Days</p>
+               
+                </div>
+               
+                <div class="playButton">
+                  
+                    <img src="images/pressplay.png" width="20px" height="20px">
+               
+                </div>
+
+            </div>
+           
+            <div id="toDoCard" class="card toDoCard">
+               
+                <div class="toDoHome">
+                  
+                    <div id="toDoSnippet">
+                       
+                        <p id="toDoUpdate">
+                            decorate classroom for easter
+                        </p>
+                    
+                    </div>
+                   
+                    <p>The To Do's</p>
+               
+                </div>
+               
+                <div class="playButton">
+                 
+                    <img src="images/pressplay.png" width="20px" height="20px">
+                
+                </div>
+           
+            </div>
+       
+        </div>
+
+        <div class="containerColumn3">
+        
+            <div id="journal" class="card">
+              
+                <p>Journal it out</p>
+               
+                <div class="playButton extraLeftPlayButton">
+                   
+                    <img src="images/pressplay.png" width="20px" height="20px">
+               
+                </div>
+            
+            </div>
+            
+            <div id="coreValuesCard" class="card">
+               
+                <p>Core Values</p>
+               
+                <div class="playButton extraLeftPlayButton">
+                  
+                    <img src="images/pressplay.png" width="20px" height="20px">
+                
+                </div>
+           
+            </div>
+        
+        </div>
+
+        <div class="containerColumn4">
+           
+            <div id="summerCountdown" class="card">
+               
+                <p onclick="summerCountdown()">Summer Countdown</p>
+               
+                <div class="playSummerCountdown">
+                  
+                    <img src="images/pressplay.png" width="20px" height="20px">
+               
+                </div>
+           
+            </div>
+
+            <div class="selfCareCard card">
+              
+                <p>Self-Care Resources&nbsp;&nbsp;</p>
+               
+                <div class="playButton">
+                  
+                    <img src="images/pressplay.png" width="20px" height="20px">
+               
+                </div>
+           
+            </div>
+
+            <div id="substituteCard" class="card">
+               
+                <p>Customized Sub Plan</p>
+                
+                <div class="playSubPlan">
+                  
+                    <img src="images/pressplay.png" width="20px" height="20px">
+               
+                </div>
+           
+            </div>
+       
+        </div>
+    
+    </div>
+
+
+    <div id="myJournal" class="hidden-div">
+       
+        <div id="padding-journal">
+           
+            <div id="journal-heading">
+                
+                <strong style="color: white; font-family: AlegreyaLight">Journal it Out</strong>
+            
+            </div>
+           
+            <div id="journal1">
+               
+                <div id="prompts" onclick="displayJournalPrompt()">
+                  
+                    <img src="images/clickhere.png" width="55px" height="50px" />
+                    for journal prompts
+               
+                </div>
+             
+                <textarea placeholder="Your thoughts.." id="input" class="zeyada"></textarea>
+           
+            </div>
+           
+            <div style="margin-left: 350px;">
+              
+                <button id="saveButton">Save</button>
+           
+            </div>
+      
+        </div>
+   
+    </div>
+
+    <div id="mycorevalues" class="hidden-div">
+        
+        <div id="padding-core-values">
+           
+            <h1 class="titleCoreValuesDiv">Core Values</h1>
+           
+            <div class="coreValuesInstructions">
+                Click on words below to populate your 6 Core Values, you can deselect them by clicking on them again if
+                you decide your values have changed
+           
+            </div>
+           
+            <div class="wordbank" class="column-wrapper">
+               
+                <div class="word">Accountability</div>
+                <div class="word">Adventure</div>
+                <div class="word">Altruism</div>
+                <div class="word">Ambition</div>
+                <div class="word">Authenticity</div>
+                <div class="word">Balance</div>
+                <div class="word">Beauty</div>
+                <div class="word">Belonging</div>
+                <div class="word">Career</div>
+                <div class="word">Caring</div>
+                <div class="word">Collaboration</div>
+                <div class="word">Commitment</div>
+                <div class="word">Community</div>
+                <div class="word">Connection</div>
+                <div class="word">Contribution</div>
+                <div class="word">Courage</div>
+                <div class="word">Creativity</div>
+                <div class="word">Curiosity</div>
+                <div class="word">Ethics</div>
+                <div class="word">Faith</div>
+                <div class="word">Family</div>
+                <div class="word">Financial Stability</div>
+                <div class="word">Freedom</div>
+                <div class="word">Fun</div>
+                <div class="word">Generosity</div>
+                <div class="word">Grace</div>
+                <div class="word">Gratitude</div>
+                <div class="word">Growth</div>
+                <div class="word">Home</div>
+                <div class="word">Health</div>
+                <div class="word">Honesty</div>
+                <div class="word">Humility</div>
+                <div class="word">Humor</div>
+                <div class="word">Independence</div>
+                <div class="word">Job security</div>
+                <div class="word">Joy</div>
+                <div class="word">Learning</div>
+                <div class="word">Love</div>
+                <div class="word">Reliability</div>
+                <div class="word">Resourcefulness</div>
+                <div class="word">Respect</div>
+                <div class="word">Self-discipline</div>
+                <div class="word">Self-respect</div>
+                <div class="word">Service</div>
+                <div class="word">Simplicity</div>
+                <div class="word">Spirituality</div>
+                <div class="word">Success</div>
+                <div class="word">Teamwork</div>
+                <div class="word">Truth</div>
+                <div class="word">Understanding</div>
+                <div class="word">Wealth</div>
+            
+            </div>
+
+            <div class="cvlink">
+                
+                <a href="https://brenebrown.com/resources/dare-to-lead-list-of-values/" target="_blank"
+                    title="Open Brene Brown Link" class="cvlink">Complete Values List
+                    found at BreneBrown.com</a>
+            
+                </div>
+
+            <h2 class="titleSixCoreValues">Your Top Six Core Values:</h2>
+
+            <div id="your-list-container" class="cardContainer">
+
+                <div class="selected-words"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="monthlyCalendarDiv" class="hidden-div calendar">
+        
+        <div class="header">
+           
+            <button id="prevMonth">&lt;</button>
+           
+            <h2 id="monthYear"></h2>
+           
+            <button id="nextMonth">&gt;</button>
+        
+        </div>
+       
+        <div class="days">
+       
+        </div>
+   
+    </div>
+
+    <script src="project1.js" defer></script>
+
+</body>

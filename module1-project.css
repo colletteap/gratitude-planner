@@ -1,0 +1,526 @@
+@font-face {
+  font-family: 'Zeyada';
+  src: url(font/Zeyada-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'AlegreyaLight';
+  src: url(font/AlegreyaSansSC-Light.ttf) format('truetype');
+}
+
+.zeyada {
+  font-family: 'Zeyada', sans serif;
+  font-size: 20px;
+}
+
+.alegreyaLight {
+  font-family: 'AlegreyaLight', sans serif;
+}
+
+body {
+  font-family: lora, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+  padding-top: 2rem;
+}
+
+
+p {
+  text-transform: capitalize;
+  color: white;
+  font-family: 'AlegreyaLight', sans serif;
+}
+
+textarea {
+  font-family: 'SpaceBold', sans serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+  background-color: #586959;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+li {
+  font-size: 12px;
+}
+
+#specialDaysSnippet {
+  background-color: white;
+  border-radius: 10px;
+  border: solid white;
+  width: 150px;
+  height: 150px;
+  align-self: left;
+  margin-top: 10px;
+}
+
+#toDoSnippet {
+  background-color: white;
+  border-radius: 10px;
+  border: solid white;
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#randomPhrase {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  font-weight: 100;
+  color: #586959
+}
+
+#randomPhrase::before {
+  content: '-';
+  margin-right: 0.6em;
+  color: #686868;
+}
+
+#randomPhrase::after {
+  content: '-';
+  margin-left: 0.6em;
+  color: #686868;
+}
+
+.containerColumn1 {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.containerColumn2 {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.containerColumn3 {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.containerColumn4 {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.card {
+  display: flex;
+  background: #D5B795;
+  color: #000000;
+  text-align: left;
+  align-items: flex-end;
+  text-transform: capitalize;
+  width: 250px;
+  height: 100px;
+  min-width: 200px;
+  font-size: 18px;
+  cursor: crosshair;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.myGreatDay {
+  background-color: #d18577;
+  height: 110px;
+}
+
+
+.specialDays {
+  background-color: #7c919a;
+  height: 225px;
+}
+
+#journal {
+  background-color: #99a59a;
+  height: 225px;
+}
+
+.arrowImg {
+  width: 25px;
+  height: 25px;
+  margin-left: 50px;
+  margin-bottom: 160px;
+}
+
+.playButton {
+  font-size: 25px;
+  text-align: right;
+  margin-left: 50px;
+  margin-bottom: 130px;
+}
+
+.extraLeftPlayButton {
+  padding-left: 70px;
+}
+
+.playSubPlan {
+  font-size: 25px;
+  text-align: right;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+
+.playSummerCountdown {
+  text-align: right;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+#summerCountdown {
+  background: #7c919a;
+  color: #000000;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  height: 80px;
+}
+
+.summerCountdownStyle {
+  font-family: 'Zeyada', sans serif;
+  color: white;
+  font-size: 22px;
+}
+
+#calendar {
+  background-color: #af6e34;
+  height: 340px;
+}
+
+.toDoCard {
+  background-color: #e1b469;
+  height: 225px;
+}
+
+#coreValuesCard {
+  background-color: #9f5f67;
+  height: 225px;
+}
+
+.selfCareCard {
+  background-color: #586959;
+  height: 193px;
+}
+
+#substituteCard {
+  background-color: #d18577;
+  height: 153px;
+}
+
+
+#journal-body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+  padding-top: 3rem;
+}
+
+#journal-heading {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  font-size: 22px;
+}
+
+#padding-journal {
+  background-color: #99a59a;
+  border: none;
+  width: 800px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+#journal1 {
+  background-color: #FFF;
+  margin: 20px 20px 20px 20px;
+  text-align: center;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+#prompts {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 6px;
+  cursor: crosshair;
+}
+
+#input {
+  width: 90%;
+  border: 2px solid #aaa;
+  border-radius: 2px;
+  padding-bottom: 350px;
+}
+
+#myJournal {
+  justify-content: center;
+  align-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+  padding-top: 3rem;
+}
+
+.hidden-div {
+  display: none;
+}
+
+#mycorevalues {
+  justify-content: center;
+  align-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+  padding-top: 3rem;
+}
+
+.titleCoreValuesDiv {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFF;
+  font-family: AlegreyaLight;
+}
+
+.titleSixCoreValues {
+  font-family: AlegreyaLight, sans serif;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  color: #FFF
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cvcard {
+  height: 30px;
+  width: 250px;
+  border: #9f5f67;
+  border-radius: 5px;
+  align-self: center;
+}
+
+#padding-core-values {
+  background-color: #9f5f67;
+  border: none;
+  width: 800px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+#wordbank {
+  background-color: #FFF;
+  margin: 20px 20px 20px 20px;
+  text-align: center;
+  color: black;
+  border: #9f5f67;
+  border-radius: 5px;
+  height: 250px;
+  padding-top: 5px;
+}
+
+#your-list-container {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.column-wrapper {
+  column-count: 3;
+  column-gap: 20px;
+  /* Optional - adjust the gap between columns */
+}
+
+.cvlink {
+  text-align: center;
+  font-size: 13px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: dotted;
+  color: #aaa;
+}
+
+.cvinput {
+  width: 90%;
+  border: 2px solid #aaa;
+  border-radius: 2px;
+  padding-bottom: 350px;
+}
+
+#cvButton {
+  background: #aaa;
+  color: #000000;
+  padding: 5px;
+  height: 30px;
+  align-self: center;
+  border-radius: 5px;
+  border-color: #9f5f67;
+}
+
+.cvbuttondiv {
+  align-self: center;
+}
+
+.wordbank {
+  border: 3px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.selected-words {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #aaa;
+}
+
+.word {
+  font-family: AlegreyaLight, sans serif;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.coreValuesInstructions {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.toDoHome {
+  flex-flow: column wrap;
+  height: 225px;
+}
+
+.specialDaysHome {
+  flex-flow: column wrap;
+  height: 225px;
+}
+
+#toDoUpdate,
+#specialDaysUpdate {
+  flex-grow: 2;
+  height: 150px;
+  width: 155px;
+  color: black;
+  font-size: 14px;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+}
+
+
+#monthlyCalendarDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#monthYear {
+  font-family: AlegreyaLight, sans serif;
+  align-self: center;
+}
+
+.calendar {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  height: 600px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #af6e34;
+  color: white;
+  padding: 10px;
+  width: 800px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+  height: 600px;
+  width: 800px;
+}
+
+.day {
+  font-family: AlegreyaLight, sans serif;
+  border: 1px solid;
+  padding: 5px;
+  text-align: center;
+  background-color: #ebccbd;
+}
+
+.calendarToDoContainer,
+.calendarSpecialEventsContainer,
+.calendarNotesContainer {
+  width: 100px;
+  height: 50px;
+  color: black;
+  text-decoration: underline;
+}
+
+.calendarToDoInput,
+.calendarSpecialEventsInput,
+.calendarNotesInput {
+  overflow: hidden;
+  resize: none;
+  border: 1px solid white;
+  background-color: #ebccbd;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 8px;
+  width: 85px;
+  height: 40px;
+}
