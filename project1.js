@@ -311,3 +311,15 @@ specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
     localStorage.setItem("recentSpecialDaysTexts", JSON.stringify(recentSpecialDaysTexts));
   });
 });
+
+// Show white divs on top when to do and special days are clicked
+
+document.querySelectorAll(".calendarToDoInput").addEventListener("click", () => {
+  document.getElementById("specialDaysSnippet").hidden = true;
+  document.getElementById("toDoSnippet").hidden = false;
+});
+
+document.querySelectorAll(".calendarSpecialEventsInput").addEventListener("click", () => {
+  document.getElementById("specialDaysSnippet").hidden = false;
+  document.getElementById("toDoSnippet").hidden = true;
+});
