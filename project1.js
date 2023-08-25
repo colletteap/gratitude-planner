@@ -273,6 +273,7 @@ topToDoDiv.textContent = recentTodoTexts.join("\n");
 
 todoTextareas.forEach((calendarToDoInput, _index) => {
   calendarToDoInput.addEventListener("blur", function () {
+    document.getElementById("toDoSnippet").hidden = false;
     const todoText = calendarToDoInput.value;
 
     recentTodoTexts.unshift(todoText);
@@ -298,6 +299,7 @@ topSpecialDaysDiv.textContent = recentSpecialDaysTexts.join("\n");
 
 specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
   calendarSpecialEventsInput.addEventListener("blur", function () {
+    document.getElementById("specialDaysSnippet").hidden = false;
     const specialDaysText = calendarSpecialEventsInput.value;
 
     recentSpecialDaysTexts.unshift(specialDaysText);
@@ -312,14 +314,3 @@ specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
   });
 });
 
-// Show white divs on top when to do and special days are clicked
-
-document.querySelectorAll(".calendarToDoInput").addEventListener("click", () => {
-  document.getElementById("specialDaysSnippet").hidden = true;
-  document.getElementById("toDoSnippet").hidden = false;
-});
-
-document.querySelectorAll(".calendarSpecialEventsInput").addEventListener("click", () => {
-  document.getElementById("specialDaysSnippet").hidden = false;
-  document.getElementById("toDoSnippet").hidden = true;
-});

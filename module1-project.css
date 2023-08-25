@@ -524,3 +524,151 @@ li {
   width: 85px;
   height: 40px;
 }
+
+
+
+p1 {
+  text-align: center;
+  letter-spacing: 1px;
+  color: #586959;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.break-title {
+  font-size: 12px;
+  letter-spacing: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.art {
+  width: 80px;
+  height: 40px;
+}
+
+.dos {
+  width: 70px;
+  height: 40px;
+}
+
+.ted {
+  width: 45px;
+  height: 40px;
+}
+
+.klt {
+  width: 45px;
+  height: 40px;
+}
+
+
+.bb {
+  width: 120px;
+  height: 30px;
+}
+
+.eckart {
+  width: 120px;
+  height: 25px;
+}
+
+.insight {
+  width: 100px;
+  height: 30px;
+}
+
+.fb {
+  width: 140px;
+  height: 35px;
+}
+
+.burnedin {
+  width: 90px;
+  height: 35px;
+}
+
+.wellness {
+  width: 100px;
+  height: 35px;
+}
+
+.pinterest {
+  width: 35px;
+  height: 35px;
+}
+
+.bookBB {
+  width: 50px;
+  height: 70px;
+  padding: 1px;
+}
+
+.youturn {
+  width: 70px;
+  height: 50px;
+}
+
+.gabby {
+  width: 80px;
+  height: 30px;
+  padding: 1px;
+}
+
+.cardSC {
+  height: 200px;
+  width: 400px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: black solid 3px;
+}
+
+#selfCareContainerDiv {
+  background-color: #586959;
+  border: none;
+  width: 900px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+#containerSC {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: #FFF;
+  margin: 20px 20px 20px 20px;
+  text-align: center;
+  color: black;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 455px;
+  padding-top: 15px;
+}
+
+
+.break-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.column-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 15px;
+}
+
+.imgBorder {
+  border: black solid 2px;
+}
