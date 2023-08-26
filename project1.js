@@ -84,26 +84,36 @@ function displayJournalPrompt() {
   var statementElement = document.getElementById('prompts');
   statementElement.textContent = selectJournalPrompt();
 }
-// document.addEventListener("click", displayJournalPrompt)
 
 // Hide/Show Journal and Core Values Div
 document.getElementById("journal").addEventListener("click", () => {
   document.getElementById("monthlyCalendarDiv").hidden = true;
   document.getElementById("mycorevalues").hidden = true;
   document.getElementById("myJournal").hidden = false;
+  document.getElementById("selfCareContainerDiv").hidden = true;
 });
 
 document.getElementById("calendar").addEventListener("click", () => {
   document.getElementById("monthlyCalendarDiv").hidden = false;
   document.getElementById("mycorevalues").hidden = true;
   document.getElementById("myJournal").hidden = true;
+  document.getElementById("selfCareContainerDiv").hidden = true;
 });
 
 document.getElementById("coreValuesCard").addEventListener("click", () => {
   document.getElementById("monthlyCalendarDiv").hidden = true;
   document.getElementById("mycorevalues").hidden = false;
   document.getElementById("myJournal").hidden = true;
+  document.getElementById("selfCareContainerDiv").hidden = true;
 });
+
+document.getElementById("selfCareCard").addEventListener("click", () => {
+  document.getElementById("monthlyCalendarDiv").hidden = true;
+  document.getElementById("mycorevalues").hidden = true;
+  document.getElementById("myJournal").hidden = true;
+  document.getElementById("selfCareContainerDiv").hidden = false;
+});
+
 
 function showDivById(divId) {
   const divToShow = document.getElementById(divId);

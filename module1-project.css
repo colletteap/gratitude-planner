@@ -196,7 +196,6 @@ li {
 
 #summerCountdown {
   background: #7c919a;
-  color: #000000;
   padding-left: 10px;
   padding-bottom: 5px;
   height: 80px;
@@ -223,7 +222,7 @@ li {
   height: 225px;
 }
 
-.selfCareCard {
+#selfCareCard {
   background-color: #586959;
   height: 193px;
 }
@@ -624,6 +623,7 @@ p1 {
 }
 
 #selfCareContainerDiv {
+  align-items: center;
   background-color: #586959;
   border: none;
   width: 900px;
