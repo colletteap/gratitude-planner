@@ -401,6 +401,7 @@ label {
 #classScheduleContainer {
     display: flex;
     flex-flow: row wrap;
+    gap: 30;
     padding: 5px;
     background-color: #fff;
     height: auto;

@@ -45,22 +45,18 @@ li {
 }
 
 #specialDaysSnippet {
-  background-color: white;
-  border-radius: 10px;
-  border: solid white;
   width: 150px;
   height: 150px;
   align-self: left;
   margin-top: 10px;
+  font-weight:bolder;
 }
 
 #toDoSnippet {
-  background-color: white;
-  border-radius: 10px;
-  border: solid white;
   width: 150px;
   height: 150px;
   margin-top: 10px;
+  font-weight:bolder;
 }
 
 .container {

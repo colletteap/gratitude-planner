@@ -288,7 +288,7 @@ todoTextareas.forEach((calendarToDoInput, _index) => {
 
     recentTodoTexts.unshift(todoText);
 
-    if (recentTodoTexts.length > 6) {
+    if (recentTodoTexts.length > 8) {
       recentTodoTexts.pop();
     }
 
@@ -314,7 +314,7 @@ specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
 
     recentSpecialDaysTexts.unshift(specialDaysText);
 
-    if (recentSpecialDaysTexts.length > 6) {
+    if (recentSpecialDaysTexts.length > 8) {
       recentSpecialDaysTexts.pop();
     }
 
