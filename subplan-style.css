@@ -288,6 +288,7 @@ label {
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 50px;
 }
 
 .day-container {
@@ -401,8 +402,6 @@ label {
 #classScheduleContainer {
     display: flex;
     flex-flow: row wrap;
-    gap: 30;
-    padding: 5px;
     background-color: #fff;
     height: auto;
     width: 700px;
@@ -410,6 +409,8 @@ label {
     border: solid;
     margin-bottom: 10px;
     padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
     justify-content: center;
     align-self: center;
     margin-top: 10px;
@@ -499,8 +500,9 @@ label {
     border: solid;
     border-radius: 3px;
     width: 650px;
-    height: 950px;
-    margin: auto;
+    height: 1380px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #listNames {
@@ -529,7 +531,7 @@ label {
 
 #eachStudentName {
     width: 100%;
-    height: 12px;
+    height: auto;
     border: 1px solid #ccc;
     padding: 5px;
     margin-bottom: 5px;
@@ -550,7 +552,7 @@ label {
 
 #eachStudentNotes {
     width: 100%;
-    height: 12px;
+    height: auto;
     border: 1px solid #ccc;
     padding: 5px;
     margin-bottom: 5px;
