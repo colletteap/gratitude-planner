@@ -619,7 +619,7 @@ p1 {
 }
 
 #selfCareContainerDiv {
-  align-items: center;
+  font-family: 'AlegreyaLight', sans serif;
   background-color: #586959;
   border: none;
   width: 900px;

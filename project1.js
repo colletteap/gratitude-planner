@@ -91,6 +91,7 @@ document.getElementById("journal").addEventListener("click", () => {
   document.getElementById("mycorevalues").hidden = true;
   document.getElementById("myJournal").hidden = false;
   document.getElementById("selfCareContainerDiv").hidden = true;
+  showDivById('myJournal');
 });
 
 document.getElementById("calendar").addEventListener("click", () => {
@@ -98,6 +99,7 @@ document.getElementById("calendar").addEventListener("click", () => {
   document.getElementById("mycorevalues").hidden = true;
   document.getElementById("myJournal").hidden = true;
   document.getElementById("selfCareContainerDiv").hidden = true;
+  showDivById('monthlyCalendarDiv');
 });
 
 document.getElementById("coreValuesCard").addEventListener("click", () => {
@@ -105,6 +107,7 @@ document.getElementById("coreValuesCard").addEventListener("click", () => {
   document.getElementById("mycorevalues").hidden = false;
   document.getElementById("myJournal").hidden = true;
   document.getElementById("selfCareContainerDiv").hidden = true;
+  showDivById('mycorevalues');
 });
 
 document.getElementById("selfCareCard").addEventListener("click", () => {
@@ -112,21 +115,16 @@ document.getElementById("selfCareCard").addEventListener("click", () => {
   document.getElementById("mycorevalues").hidden = true;
   document.getElementById("myJournal").hidden = true;
   document.getElementById("selfCareContainerDiv").hidden = false;
+  showDivById('selfCareContainerDiv');
 });
 
 
 function showDivById(divId) {
   const divToShow = document.getElementById(divId);
-  // divToShow.style.display = 'flex';
   divToShow.classList.remove('hidden-div')
   divToShow.scrollIntoView({ behavior: 'smooth' });
 }
 
-const monthlyCalendarDiv = document.querySelector('#calendar');
-monthlyCalendarDiv.addEventListener('click', () => { showDivById('monthlyCalendarDiv') });
-
-const para2 = document.querySelector('#journal');
-para2.addEventListener('click', () => { showDivById('myJournal') });
 
 //Saving to Local Storage
 
@@ -145,10 +143,7 @@ function saveData() {
   localStorage.setItem('savedData', data);
 }
 
-// Show Core Values Div
 
-const para3 = document.querySelector('#coreValuesCard');
-para3.addEventListener('click', () => { showDivById('mycorevalues') });
 
 // List
 document.addEventListener('DOMContentLoaded', function () {
