@@ -1,11 +1,3 @@
-// local storage for all inputs - use form
-
-// when title of day clicked on, it changes color
-
-// seating chart will have a click listener to duplicate, a click listener to move, a click listener for double click to type inside
-
-// calendar add Days and Periods
-
 //Saving to Local Storage
 
 const inputFields = document.querySelectorAll('.inputField');
@@ -44,7 +36,7 @@ inputFields.forEach(inputField => {
 // Alert on Teacher Name Input
 
 function onPageContentLoaded() {
-  alert('Input is saved upon entry ---------- Screenshot this is you are mobile to send to your sub ------------------ If on a desktop, print as a PDF to save and send to your sub');
+  alert('Type in the boxes, it is saved automatically! Screenshot this is you are mobile to send to your sub & if you are on a desktop, print as a PDF to save and send to your sub - keep this as your backup sub plan or modify the little details any time you need to!');
 }
 
 document.addEventListener('DOMContentLoaded', onPageContentLoaded);
@@ -72,8 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Write code to save clonedPeriod div into local storage once created
-
   // Delete Period Button
 
   const deletePeriodButton = document.getElementById('buttonPeriodDelete')
@@ -89,13 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 });
 
-
-
-
-
-
-
-// Hiding Days - hiding day 6
+// Hide/Unhide Day 6
 
 const hiddenButton6 = document.getElementById("hiddenButton6");
 const classScheduleDay6 = document.getElementById("classScheduleDay6");
@@ -253,8 +237,6 @@ for (let i = 1; i <= 30; i++) {
   textarea.className = 'inputField';
   studentNotesDiv.appendChild(textarea);
 }
-
-
 
 // Add Period Plan Button
 
