@@ -136,7 +136,7 @@ label {
     height: 40px;
     align-items: center;
     align-content: center;
-    cursor: cell;
+    cursor: text;
     word-wrap: normal;
     resize: none;
     overflow: hidden;
@@ -154,7 +154,7 @@ label {
 }
 
 .inputField {
-    cursor: alias;
+    cursor: text;
 }
 
 #textarealg {
