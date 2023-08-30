@@ -535,6 +535,7 @@ p1 {
   letter-spacing: 0px;
   padding-bottom: 0px;
   margin-bottom: 0px;
+  color: black;
 }
 
 .art {
@@ -625,6 +626,7 @@ p1 {
   width: 900px;
   border-radius: 5px;
   padding-bottom: 10px;
+  margin: auto;
 }
 
 #containerSC {
@@ -662,7 +664,7 @@ p1 {
   justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
-  gap: 15px;
+  gap: 10px;
 }
 
 .imgBorder {
