@@ -214,9 +214,6 @@ unhideButton10.addEventListener("click", function () {
 
 const studentNamesDiv = document.getElementById('studentNames');
 
-// Looping
-
-
 for (let i = 1; i <= 30; i++) {
   const textarea = document.createElement('textarea');
   textarea.id = 'eachStudentName';
@@ -226,9 +223,8 @@ for (let i = 1; i <= 30; i++) {
 }
 
 // Looping Student Notes
-const studentNotesDiv = document.getElementById('studentNotes');
 
-// Looping
+const studentNotesDiv = document.getElementById('studentNotes');
 
 for (let i = 1; i <= 30; i++) {
   const textarea = document.createElement('textarea');

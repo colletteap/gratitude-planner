@@ -21,7 +21,7 @@ button.addEventListener('click', summerCountdown);
 
 function summerCountdown() {
   // Set date countdown is to end
-  const eventDate = new Date('2023-06-23T15:00:00');
+  const eventDate = new Date('2024-06-21T15:00:00');
 
   // Get current date and time
   const currentDate = new Date();
@@ -86,36 +86,21 @@ function displayJournalPrompt() {
 }
 
 // Hide/Show Journal and Core Values Div
-document.getElementById("journal").addEventListener("click", () => {
-  document.getElementById("monthlyCalendarDiv").hidden = true;
-  document.getElementById("mycorevalues").hidden = true;
-  document.getElementById("myJournal").hidden = false;
-  document.getElementById("selfCareContainerDiv").hidden = true;
-  showDivById('myJournal');
-});
 
-document.getElementById("calendar").addEventListener("click", () => {
-  document.getElementById("monthlyCalendarDiv").hidden = false;
-  document.getElementById("mycorevalues").hidden = true;
-  document.getElementById("myJournal").hidden = true;
-  document.getElementById("selfCareContainerDiv").hidden = true;
-  showDivById('monthlyCalendarDiv');
-});
+const sections = [
+  { id: "journal", showDiv: "myJournal" },
+  { id: "calendar", showDiv: "monthlyCalendarDiv" },
+  { id: "coreValuesCard", showDiv: "mycorevalues" },
+  { id: "selfCareCard", showDiv: "selfCareContainerDiv" }
+];
 
-document.getElementById("coreValuesCard").addEventListener("click", () => {
-  document.getElementById("monthlyCalendarDiv").hidden = true;
-  document.getElementById("mycorevalues").hidden = false;
-  document.getElementById("myJournal").hidden = true;
-  document.getElementById("selfCareContainerDiv").hidden = true;
-  showDivById('mycorevalues');
-});
-
-document.getElementById("selfCareCard").addEventListener("click", () => {
-  document.getElementById("monthlyCalendarDiv").hidden = true;
-  document.getElementById("mycorevalues").hidden = true;
-  document.getElementById("myJournal").hidden = true;
-  document.getElementById("selfCareContainerDiv").hidden = false;
-  showDivById('selfCareContainerDiv');
+sections.forEach(section => {
+  document.getElementById(section.id).addEventListener("click", () => {
+    sections.forEach(otherSection => {
+      document.getElementById(otherSection.showDiv).hidden = otherSection.showDiv !== section.showDiv;
+    });
+    showDivById(section.showDiv);
+  });
 });
 
 
