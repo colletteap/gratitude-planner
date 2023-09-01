@@ -219,6 +219,15 @@ for (let i = 1; i <= 30; i++) {
   textarea.id = 'eachStudentName';
   textarea.placeholder = `Student ${i} Name`;
   textarea.className = 'inputField';
+  const savedNames = localStorage.getItem(`studentNames${i}`);
+  if (savedNames) {
+    textarea.value = savedNames;
+  }
+
+  textarea.addEventListener('input', () => {
+    const names = textarea.value;
+    localStorage.setItem(`studentNames${i}`, names);
+  });
   studentNamesDiv.appendChild(textarea);
 }
 
@@ -231,6 +240,15 @@ for (let i = 1; i <= 30; i++) {
   textarea.id = 'eachStudentNotes';
   textarea.placeholder = `Student ${i} Notes`;
   textarea.className = 'inputField';
+  const savedNotes = localStorage.getItem(`studentNotes${i}`);
+    if (savedNotes) {
+      textarea.value = savedNotes; 
+        }
+
+    textarea.addEventListener('input', () => {
+      const notes = textarea.value;
+      localStorage.setItem(`studentNotes${i}`, notes);
+    });
   studentNotesDiv.appendChild(textarea);
 }
 
