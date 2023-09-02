@@ -260,16 +260,26 @@ document.addEventListener('DOMContentLoaded', function () {
   const parentPeriodDiv = document.getElementById('periodDiv');
   let clonedPeriodCount = 0;
 
+  const savedPeriodData = localStorage.getItem('periodData');
+  if (savedPeriodData) {
+    containerPlan.innerHTML = savedPeriodData;
+    clonedPeriodCount = containerPlan.querySelectorAll('.periodDiv').length;
+  }
+
   addPeriodPlanBtn.addEventListener('click', function () {
     if (clonedPeriodCount < 5) {
       const clonedPeriod = parentPeriodDiv.cloneNode(true);
 
       containerPlan.appendChild(clonedPeriod);
       clonedPeriodCount++;
+
+      localStorage.setItem('periodData', containerPlan.innerHTML);
     } else {
       alert('Seriously, if you have more than 10 periods.. your problem is bigger than needing a planner');
     }
   });
 });
+
+
 
   //Saving to Local Storage
