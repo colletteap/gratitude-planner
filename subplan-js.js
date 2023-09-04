@@ -1,6 +1,6 @@
 //Saving to Local Storage
 
-  const inputFields = document.querySelectorAll('.inputField');
+const inputFields = document.querySelectorAll('.inputField');
 
 function saveToLocalStorage() {
   const inputFields = document.querySelectorAll('.inputField');
@@ -31,7 +31,6 @@ loadFromLocalStorage();
 inputFields.forEach(inputField => {
   inputField.addEventListener('input', saveToLocalStorage);
 });
-
 
 // Alert on Teacher Name Input
 

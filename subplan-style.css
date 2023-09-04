@@ -163,18 +163,18 @@ label {
     border: none;
     width: 640px;
     height: 75px;
-    color: #778899;
+    color: black;
     resize: none;
     overflow: hidden;
 }
 
 #textareamed {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     border: none;
     width: 310px;
     height: 75px;
-    color: #778899;
+    color: black;
     resize: none;
     overflow: hidden;
 }
@@ -185,7 +185,7 @@ label {
     border: none;
     width: 40px;
     height: 15px;
-    color: #778899;
+    color: black;
     resize: none;
     overflow: hidden;
 }
@@ -194,9 +194,9 @@ label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
     border: none;
-    width: 215px;
+    width: 210px;
     height: 90px;
-    color: #778899;
+    color: black;
     resize: none;
     overflow: hidden;
 }
@@ -205,9 +205,9 @@ label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
     border: none;
-    width: 295px;
+    width: 290px;
     height: 90px;
-    color: #778899;
+    color: black;
     resize: none;
     overflow: hidden;
 }
@@ -218,7 +218,7 @@ label {
     border: none;
     width: 50px;
     height: 75px;
-    color: #778899;
+    color: black;
     resize: none;
     overflow: hidden;
 }
