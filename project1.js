@@ -268,7 +268,7 @@ todoTextareas.forEach((calendarToDoInput, _index) => {
 
     recentTodoTexts.unshift(todoText);
 
-    if (recentTodoTexts.length > 8) {
+    if (recentTodoTexts.length > 6) {
       recentTodoTexts.pop();
     }
 

@@ -124,7 +124,7 @@ label {
     text-decoration: underline;
 }
 
-#inputTeach {
+.inputTeach {
     font-size: 11px;
     width: 240px;
 }
