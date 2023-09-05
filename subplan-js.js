@@ -29,7 +29,14 @@ function loadFromLocalStorage() {
 loadFromLocalStorage();
 
 inputFields.forEach(inputField => {
+  console.log('Adding event listener to inputField');
   inputField.addEventListener('input', saveToLocalStorage);
+});
+
+// Clickable PDF
+
+document.getElementById('pdfButton').addEventListener('click', function() {
+  window.location.href = "./While_You_Were_Away.pdf", '_blank';
 });
 
 // Alert on Teacher Name Input

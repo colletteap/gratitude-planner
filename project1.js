@@ -63,7 +63,7 @@ function updateName() {
 // Clickable Sub Plan Div
 
 document.getElementById("substituteCard").addEventListener("click", function() {
-window.location.href = "./subplan.html";
+window.location.href = "./subplan.html", "_blank";
 });
 
 
