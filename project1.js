@@ -38,6 +38,7 @@ function summerCountdown() {
     // Display countdown
     const countdownElement = document.getElementById('summerCountdown');
     countdownElement.textContent = `Summer starts in: ${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
+    countdownElement.classList.add('summerCountdownStyle');
 
     // Update countdown every second
     setTimeout(summerCountdown, 1000);
@@ -268,7 +269,7 @@ todoTextareas.forEach((calendarToDoInput, _index) => {
 
     recentTodoTexts.unshift(todoText);
 
-    if (recentTodoTexts.length > 6) {
+    if (recentTodoTexts.length > 8) {
       recentTodoTexts.pop();
     }
 
