@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     margin-top: 15px;
     align-self: center;
 }
@@ -62,6 +62,17 @@ button {
     font-size: 10px;
 }
 
+#pdfButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 .deleteButton {
     border-radius: 2px;
     margin-bottom: 1px;
@@ -73,8 +84,10 @@ button {
 #buttonPeriodDelete {
     border-radius: 2px;
     margin-bottom: 1px;
-    font-size: 10px;
-    width: 80px;
+    font-size: 12px;
+    width: 85px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     align-self: center;
 
 }
@@ -308,87 +321,15 @@ label {
     flex-flow: column wrap;
 }
 
-#classScheduleDay1 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2px;
-}
-
-#classScheduleDay2 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2px;
-}
-
-#classScheduleDay3 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2px;
-}
-
-#classScheduleDay4 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2px;
-}
-
-#classScheduleDay5 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2px;
-}
-
-#classScheduleDay6 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2px;
-}
-
-#classScheduleDay7 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2px;
-}
-
-#classScheduleDay8 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2px;
-}
-
-#classScheduleDay9 {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2px;
-}
-
+#classScheduleDay1,
+#classScheduleDay2,
+#classScheduleDay3,
+#classScheduleDay4,
+#classScheduleDay5,
+#classScheduleDay6,
+#classScheduleDay7,
+#classScheduleDay8,
+#classScheduleDay9,
 #classScheduleDay10 {
     display: flex;
     flex-flow: column wrap;
@@ -447,18 +388,11 @@ label {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1px;
     margin-bottom: 10px;
 }
 
-#studentBehaviour {
-    background-color: #fff;
-    height: 100px;
-    width: 330px;
-    border-radius: 3px;
-    border: solid;
-}
-
+#studentBehaviour,
 #emergProcedures {
     background-color: #fff;
     height: 100px;
@@ -504,13 +438,7 @@ label {
     margin-right: 100px;
 }
 
-#listNames {
-    display: flex;
-    flex-flow: column wrap;
-    width: 310px;
-    height: 550px;
-}
-
+#listNames,
 #listNotes {
     display: flex;
     flex-flow: column wrap;
