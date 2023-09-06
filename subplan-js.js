@@ -35,7 +35,7 @@ inputFields.forEach(inputField => {
 
 // Clickable PDF
 
-document.getElementById('pdfButton').addEventListener('click', function() {
+document.getElementById('pdfButton').addEventListener('click', function () {
   window.location.href = "./While_You_Were_Away.pdf", '_blank';
 });
 
@@ -224,7 +224,6 @@ for (let i = 1; i <= 30; i++) {
   const textarea = document.createElement('textarea');
   textarea.id = 'eachStudentName';
   textarea.placeholder = `Student ${i} Name`;
-  textarea.className = 'inputField';
   const savedNames = localStorage.getItem(`studentNames${i}`);
   if (savedNames) {
     textarea.value = savedNames;
@@ -245,16 +244,15 @@ for (let i = 1; i <= 30; i++) {
   const textarea = document.createElement('textarea');
   textarea.id = 'eachStudentNotes';
   textarea.placeholder = `Student ${i} Notes`;
-  textarea.className = 'inputField';
   const savedNotes = localStorage.getItem(`studentNotes${i}`);
-    if (savedNotes) {
-      textarea.value = savedNotes; 
-        }
+  if (savedNotes) {
+    textarea.value = savedNotes;
+  }
 
-    textarea.addEventListener('input', () => {
-      const notes = textarea.value;
-      localStorage.setItem(`studentNotes${i}`, notes);
-    });
+  textarea.addEventListener('input', () => {
+    const notes = textarea.value;
+    localStorage.setItem(`studentNotes${i}`, notes);
+  });
   studentNotesDiv.appendChild(textarea);
 }
 
@@ -285,7 +283,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
-
-
-  //Saving to Local Storage
