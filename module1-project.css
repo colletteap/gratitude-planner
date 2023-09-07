@@ -331,7 +331,7 @@ li {
   align-self: center;
 }
 
-#padding-core-values {
+.paddingCoreValues {
   background-color: #9f5f67;
   border: none;
   width: 800px;
@@ -340,23 +340,12 @@ li {
   margin: 0 auto;
 }
 
-#wordbank {
-  background-color: #FFF;
-  margin: 20px 20px 20px 20px;
-  text-align: center;
-  color: black;
-  border: #9f5f67;
-  border-radius: 5px;
-  height: 250px;
-  padding-top: 5px;
-}
-
-#your-list-container {
+.yourListContainer {
   padding-right: 30px;
   padding-left: 30px;
 }
 
-.column-wrapper {
+.columnWrapper {
   column-count: 3;
   column-gap: 20px;
   /* Optional - adjust the gap between columns */
@@ -391,7 +380,7 @@ li {
   align-self: center;
 }
 
-.wordbank {
+.wordBank {
   border: 3px solid #fff;
   border-radius: 5px;
   padding: 10px;
@@ -431,12 +420,7 @@ li {
   margin-bottom: 5px;
 }
 
-.toDoHome {
-  flex-flow: column wrap;
-  height: 225px;
-}
-
-.specialDaysHome {
+.toDoHome, .specialDaysHome {
   flex-flow: column wrap;
   height: 225px;
 }
@@ -548,16 +532,10 @@ p1 {
   height: 40px;
 }
 
-.ted {
+.ted, .klt {
   width: 45px;
   height: 40px;
 }
-
-.klt {
-  width: 45px;
-  height: 40px;
-}
-
 
 .bb {
   width: 120px;
@@ -647,7 +625,7 @@ p1 {
 }
 
 
-.break-container {
+.breakContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -658,7 +636,7 @@ p1 {
   padding-right: 10px;
 }
 
-.column-container {
+.columnContainer {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
