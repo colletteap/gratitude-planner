@@ -1,3 +1,9 @@
+// Clickable homepage button
+
+document.getElementById("homepageButton").addEventListener("click", function() {
+  window.location.href = "./index.html", "_blank";
+  });
+
 //Saving to Local Storage
 
 const inputFields = document.querySelectorAll('.inputField');
