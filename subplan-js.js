@@ -48,7 +48,7 @@ document.getElementById('pdfButton').addEventListener('click', function () {
 // Alert on Teacher Name Input
 
 function onPageContentLoaded() {
-  alert('Type in the boxes, it is saved automatically! Screenshot this is you are mobile to send to your sub & if you are on a desktop, print as a PDF to save and send to your sub - keep this as your backup sub plan or modify the little details any time you need to!');
+  alert('Type in the boxes, it is saved automatically! Screenshot this if you are mobile to send to your sub & if you are on a desktop, print as a PDF to save and send to your sub - keep this as your backup sub plan or modify the little details any time you need to!');
 }
 
 document.addEventListener('DOMContentLoaded', onPageContentLoaded);
