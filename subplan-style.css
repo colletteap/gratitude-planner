@@ -63,7 +63,7 @@ button {
 }
 
 #homepageButton {
-    margin: 0;
+    margin: 0 auto;
     border: solid black 1px;
     background-color: #D5B795;
     border-radius: 3px;
