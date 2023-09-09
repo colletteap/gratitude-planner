@@ -131,7 +131,7 @@ h1 {
   height: 225px;
 }
 
-#journal {
+#mainJournal {
   background-color: #99a59a;
   height: 225px;
 }
@@ -205,16 +205,7 @@ h1 {
   height: 153px;
 }
 
-
-#journal-body {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
-  padding-top: 3rem;
-}
-
-#journal-heading {
+.journalHeading {
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -222,7 +213,7 @@ h1 {
   font-size: 22px;
 }
 
-#padding-journal {
+.paddingJournal {
   background-color: #99a59a;
   border: none;
   width: 800px;
@@ -231,7 +222,7 @@ h1 {
   margin: 0 auto;
 }
 
-#journal1 {
+.journalBody {
   background-color: #FFF;
   margin: 20px 20px 20px 20px;
   text-align: center;

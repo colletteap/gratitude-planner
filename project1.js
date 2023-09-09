@@ -89,7 +89,7 @@ function displayJournalPrompt() {
 // Hide/Show Journal and Core Values Div
 
 const sections = [
-  { id: "journal", showDiv: "myJournal" },
+  { id: "mainJournal", showDiv: "myJournal" },
   { id: "calendar", showDiv: "monthlyCalendarDiv" },
   { id: "coreValuesCard", showDiv: "mycorevalues" },
   { id: "selfCareCard", showDiv: "selfCareContainerDiv" }
