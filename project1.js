@@ -1,4 +1,5 @@
 // Randomly generated affirmations
+
 const phrases = [
   'I know how to bring direction and order into my life',
   'I choose to be kind to all, including myself',
@@ -15,35 +16,46 @@ const phraseElement = document.getElementById('randomPhrase');
 phraseElement.textContent = randomPhrase;
 
 // Summer Countdown
+
 const button = document.getElementById('summerCountdown');
 
 button.addEventListener('click', summerCountdown);
 
 function summerCountdown() {
+
   // Set date countdown is to end
+
   const eventDate = new Date('2024-06-21T15:00:00');
 
   // Get current date and time
+
   const currentDate = new Date();
 
   // Calculate time difference in seconds
+
   const timeDifference = Math.floor((eventDate - currentDate) / 1000);
   if (timeDifference > 0) {
+
     // Calculate days, hours, minutes, and seconds
+
     let days = Math.floor(timeDifference / (60 * 60 * 24));
     let hours = Math.floor((timeDifference % (60 * 60 * 24)) / (60 * 60));
     let minutes = Math.floor((timeDifference % (60 * 60)) / 60);
     let seconds = Math.floor(timeDifference % 60);
 
     // Display countdown
+
     const countdownElement = document.getElementById('summerCountdown');
     countdownElement.textContent = `Summer starts in: ${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
     countdownElement.classList.add('summerCountdownStyle');
 
     // Update countdown every second
+
     setTimeout(summerCountdown, 1000);
   } else {
+
     // If event has already occurred
+
     const countdownElement = document.getElementById('summerCountdown');
     countdownElement.textContent = 'Enjoy summer break!';
     countdownElement.classList.add('summerCountdownStyle');
@@ -51,6 +63,7 @@ function summerCountdown() {
 }
 
 //Customize Planner Name
+
 const para = document.querySelector('p');
 
 para.addEventListener('click', updateName);
@@ -68,6 +81,7 @@ document.getElementById("substituteCard").addEventListener("click", function () 
 
 
 //Give Prompt Options
+
 function selectJournalPrompt() {
   var prompts = [
     'How am I feeling today?',
@@ -91,7 +105,7 @@ function displayJournalPrompt() {
 const sections = [
   { id: "mainJournal", showDiv: "myJournal" },
   { id: "calendar", showDiv: "monthlyCalendarDiv" },
-  { id: "coreValuesCard", showDiv: "mycorevalues" },
+  { id: "coreValuesCard", showDiv: "myCoreValues" },
   { id: "selfCareCard", showDiv: "selfCareContainerDiv" }
 ];
 
@@ -107,7 +121,7 @@ sections.forEach(section => {
 
 function showDivById(divId) {
   const divToShow = document.getElementById(divId);
-  divToShow.classList.remove('hidden-div')
+  divToShow.classList.remove('hiddenDiv')
   divToShow.scrollIntoView({ behavior: 'smooth' });
 }
 
@@ -121,17 +135,22 @@ dataInput.value = localStorage.getItem('savedData');
 saveButton.addEventListener('click', saveData);
 
 // Function to save input data to local storage
+
 function saveData() {
+
   // Get the input value
+
   const data = dataInput.value;
 
   // Save the data to local storage
+
   localStorage.setItem('savedData', data);
 }
 
 
 
 // List
+
 document.addEventListener('DOMContentLoaded', function () {
   const wordBank = document.querySelectorAll('.word');
   const selectedWords = document.querySelector('.selected-words');
@@ -150,6 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
         wordCount++;
 
         // Remove selected words to add new
+
         selectedWord.addEventListener('click', function () {
           selectedWords.removeChild(selectedWord);
           wordCount--;
