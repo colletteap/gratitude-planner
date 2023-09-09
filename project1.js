@@ -153,7 +153,7 @@ function saveData() {
 
 document.addEventListener('DOMContentLoaded', function () {
   const wordBank = document.querySelectorAll('.word');
-  const selectedWords = document.querySelector('.selected-words');
+  const selectedWords = document.querySelector('.selectedWords');
   let order = 1;
   let wordCount = 0;
 
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const monthYearElement = document.getElementById("monthYear");
 const prevMonthButton = document.getElementById("prevMonth");
 const nextMonthButton = document.getElementById("nextMonth");
-const daysContainer = document.querySelector(".days");
+const daysContainer = document.querySelector(".daysOfMonth");
 
 const currentDate = new Date();
 let currentMonth = currentDate.getMonth();

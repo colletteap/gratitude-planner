@@ -291,14 +291,6 @@ h1 {
   gap: 5px;
 }
 
-.cvcard {
-  height: 30px;
-  width: 250px;
-  border: #9f5f67;
-  border-radius: 5px;
-  align-self: center;
-}
-
 .paddingCoreValues {
   background-color: #9f5f67;
   border: none;
@@ -319,33 +311,12 @@ h1 {
   /* Optional - adjust the gap between columns */
 }
 
-.cvlink {
+.cvLink {
   text-align: center;
   font-size: 13px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-decoration: dotted;
   color: #aaa;
-}
-
-.cvinput {
-  width: 90%;
-  border: 2px solid #aaa;
-  border-radius: 2px;
-  padding-bottom: 350px;
-}
-
-#cvButton {
-  background: #aaa;
-  color: #000000;
-  padding: 5px;
-  height: 30px;
-  align-self: center;
-  border-radius: 5px;
-  border-color: #9f5f67;
-}
-
-.cvbuttondiv {
-  align-self: center;
 }
 
 .wordBank {
@@ -356,7 +327,7 @@ h1 {
   margin-right: 10px;
 }
 
-.selected-words {
+.selectedWords {
   border: 1px solid black;
   padding: 10px;
   margin-top: 10px;
@@ -434,7 +405,7 @@ h1 {
   width: 800px;
 }
 
-.days {
+.daysOfMonth {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 5px;
