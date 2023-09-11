@@ -147,8 +147,6 @@ function saveData() {
   localStorage.setItem('savedData', data);
 }
 
-
-
 // List
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -156,6 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const selectedWords = document.querySelector('.selectedWords');
   let order = 1;
   let wordCount = 0;
+
 
   wordBank.forEach(function (word) {
     word.addEventListener('click', function () {
@@ -173,8 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
         selectedWord.addEventListener('click', function () {
           selectedWords.removeChild(selectedWord);
           wordCount--;
-        });
-      }
+        })};
     });
   });
 });
