@@ -70,7 +70,7 @@ para.addEventListener('click', updateName);
 
 function updateName() {
   const name = prompt('Enter your name');
-  para.textContent = `${name} Teacher Planner`;
+  para.textContent = `${name}'s Great Day`;
 }
 
 // Clickable Sub Plan Div
