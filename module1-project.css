@@ -47,6 +47,15 @@ h1 {
   align-self: center;
 }
 
+.specialDaysToDoInfo {
+  color: black;
+  font-size: 8px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: right;
+  padding-bottom: 180px;
+  padding-left: 100px;
+}
+
 #specialDaysSnippet {
   width: 150px;
   height: 150px;
