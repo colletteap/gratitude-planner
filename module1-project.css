@@ -94,10 +94,7 @@ h1 {
   color: #686868;
 }
 
-.containerColumn1,
-.containerColumn2,
-.containerColumn3,
-.containerColumn4 {
+.containerColumn {
   display: flex;
   flex-direction: column;
   flex-flow: column-wrap;
@@ -106,7 +103,6 @@ h1 {
   column-gap: 20px;
   row-gap: 20px;
 }
-
 
 .card {
   display: flex;
@@ -138,6 +134,20 @@ h1 {
 .specialDays {
   background-color: #7c919a;
   height: 225px;
+}
+
+.specialDaysToDoInfo::before {
+  content: 'Space will autopopulate when text is entered into Monthly Calendar';
+  font-family: 'AlegreyaLight', sans serif;
+  font-size: 14px;
+  color: black;
+  opacity: 0;
+  font-weight: bolder;
+  margin: auto;
+}
+
+.specialDaysToDoInfo:hover::before {
+  opacity: 1;
 }
 
 #mainJournal {
