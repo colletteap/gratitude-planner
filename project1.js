@@ -162,6 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const selectedWord = document.createElement('div');
         selectedWord.textContent = word.textContent;
         selectedWord.classList.add('word');
+        selectedWord.classList.add('hoverDelete');
         selectedWord.style.order = order;
         selectedWords.appendChild(selectedWord);
         order++;

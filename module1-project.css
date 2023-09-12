@@ -356,6 +356,26 @@ h1 {
   background-color: #fff;
 }
 
+.hoverDelete {
+  cursor:crosshair;
+}
+
+.hoverDelete::before {
+  content: 'X';
+  font-family: AlegreyaLight, sans serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px;
+  opacity: 0; 
+  pointer-events: none;
+  color: #9f5f67;
+}
+
+.hoverDelete:hover::before {
+opacity: 1;
+}
+
+
 .coreValuesInstructions {
   padding: 5px;
   border: 1px solid gray;
