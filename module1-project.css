@@ -143,11 +143,12 @@ h1 {
   color: black;
   opacity: 0;
   font-weight: bolder;
-  margin: auto;
 }
 
 .specialDaysToDoInfo:hover::before {
   opacity: 1;
+  margin-right: 100px;
+  margin-top: 100px;
 }
 
 #mainJournal {
