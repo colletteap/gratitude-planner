@@ -136,6 +136,13 @@ h1 {
   height: 225px;
 }
 
+.specialDaysToDoInfo {
+  padding: 0px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  width: 160px;
+}
+
 .specialDaysToDoInfo::before {
   content: 'Space will autopopulate when text is entered into Monthly Calendar';
   font-family: 'AlegreyaLight', sans serif;
@@ -147,8 +154,6 @@ h1 {
 
 .specialDaysToDoInfo:hover::before {
   opacity: 1;
-  margin-right: 100px;
-  margin-top: 100px;
 }
 
 #mainJournal {
