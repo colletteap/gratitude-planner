@@ -61,6 +61,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const classScheduleContainer = document.querySelector('.classScheduleDays');
   const periodDiv = document.getElementById('period');
   let clonedPeriodCount = 0;
+ 
+    const savedNewPeriodData = localStorage.getItem('newPeriodData');
+    if (savedNewPeriodData) {
+      classScheduleContainer.innerHTML = savedNewPeriodData;
+      clonedPeriodCount = classScheduleContainer.querySelectorAll('.period').length;
+    }
 
   addPeriodButton.addEventListener('click', function () {
     if (clonedPeriodCount < 5) {
@@ -71,6 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
         dayContainer.appendChild(clonedPeriod.cloneNode(true));
       });
       clonedPeriodCount++;
+
+      localStorage.setItem('newPeriodData', classScheduleContainer.innerHTML);
     } else {
       alert('If you have more than 10 periods in a day, please see your administrator... something went wrong.');
     }
