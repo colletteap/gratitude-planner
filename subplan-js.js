@@ -9,7 +9,6 @@ document.getElementById("homepageButton").addEventListener("click", function () 
 const inputFields = document.querySelectorAll('.inputField');
 
 function saveToLocalStorage() {
-  const inputFields = document.querySelectorAll('.inputField');
   const inputFieldValues = {};
 
   inputFields.forEach((inputField, index) => {
@@ -38,6 +37,7 @@ inputFields.forEach(inputField => {
   console.log('Adding event listener to inputField');
   inputField.addEventListener('input', saveToLocalStorage);
 });
+
 
 // Clickable PDF
 
