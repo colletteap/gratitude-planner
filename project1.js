@@ -64,7 +64,7 @@ function summerCountdown() {
 
 //Customize Planner Name
 
-const para = document.querySelector('p');
+const para = document.getElementById('myGreatDay');
 
 para.addEventListener('click', updateName);
 
@@ -155,6 +155,17 @@ document.addEventListener('DOMContentLoaded', function () {
   let order = 1;
   let wordCount = 0;
 
+  // Load data from local storage
+  const storedData = JSON.parse(localStorage.getItem('selectedWordsData') || '[]');
+  storedData.forEach(function (data) {
+    const selectedWord = document.createElement('div');
+    selectedWord.textContent = data.content;
+    selectedWord.classList.add('word');
+    selectedWord.classList.add('hoverDelete');
+    selectedWord.style.order = data.order;
+    selectedWords.appendChild(selectedWord);
+    wordCount++;
+  });
 
   wordBank.forEach(function (word) {
     word.addEventListener('click', function () {
@@ -165,18 +176,28 @@ document.addEventListener('DOMContentLoaded', function () {
         selectedWord.classList.add('hoverDelete');
         selectedWord.style.order = order;
         selectedWords.appendChild(selectedWord);
+
+        // Save data to local storage
+        const data = {
+          content: word.textContent,
+          order: order
+        };
+        storedData.push(data);
+        localStorage.setItem('selectedWordsData', JSON.stringify(storedData));
+
         order++;
         wordCount++;
+      }
+    });
+  });
+});
 
         // Remove selected words to add new
 
         selectedWord.addEventListener('click', function () {
           selectedWords.removeChild(selectedWord);
           wordCount--;
-        })};
-    });
-  });
-});
+        });
 
 // Monthly Calendar
 

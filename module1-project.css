@@ -130,6 +130,10 @@ h1 {
   height: 110px;
 }
 
+#myGreatDay {
+  cursor:crosshair;
+}
+
 
 .specialDays {
   background-color: #7c919a;
@@ -363,6 +367,7 @@ h1 {
 
 .word {
   font-family: AlegreyaLight, sans serif;
+  font-weight: bolder;
   cursor: pointer;
   margin: 5px;
   padding: 5px;
