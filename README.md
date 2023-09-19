@@ -1,2 +1,3 @@
-# gratitude-planner
+!/images/Lotus.png
+# The Happy Teacher Planner
 A teacher planner focused on gratitude
