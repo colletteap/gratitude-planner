@@ -455,7 +455,7 @@ opacity: 1;
   width: 800px;
 }
 
-.daysOfMonth {
+#daysOfMonth {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 5px;

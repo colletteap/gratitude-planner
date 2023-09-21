@@ -193,9 +193,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
         // Remove selected words to add new
-
+        
         selectedWord.addEventListener('click', function () {
-          selectedWords.removeChild(selectedWord);
+           const selectedWord = document.createElement('div');
+           selectedWords.removeChild(selectedWord);
           wordCount--;
         });
 
@@ -204,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const monthYearElement = document.getElementById("monthYear");
 const prevMonthButton = document.getElementById("prevMonth");
 const nextMonthButton = document.getElementById("nextMonth");
-const daysContainer = document.querySelector(".daysOfMonth");
+const daysContainer = document.getElementById("daysOfMonth");
 
 const currentDate = new Date();
 let currentMonth = currentDate.getMonth();
