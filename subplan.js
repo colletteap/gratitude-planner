@@ -45,18 +45,8 @@ document.getElementById('pdfButton').addEventListener('click', function () {
   window.location.href = "./While_You_Were_Away.pdf", '_blank';
 });
 
-// Alert on Teacher Name Input
-
-function onPageContentLoaded() {
-  alert('Type in the boxes; it is saved automatically! Screenshot this if you are mobile to send to your sub & if you are on a desktop, print as a PDF to save and send to your sub - keep this as your backup sub plan or modify the little details any time you need to!');
-}
-
-document.addEventListener('DOMContentLoaded', onPageContentLoaded);
-
-
 // Add Period Button
 
-document.addEventListener('DOMContentLoaded', function () {
   const addPeriodButton = document.getElementById('buttonPeriod');
   const classScheduleContainer = document.querySelector('.classScheduleDays');
   const periodDiv = document.getElementById('period');
@@ -96,8 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       elementEachDay.lastElementChild.remove();
     })
-  })
-});
+  });
 
 // Hide/Unhide Day 6
 
@@ -272,28 +261,41 @@ for (let i = 1; i <= 30; i++) {
 
 // Add Period Plan Button
 
-document.addEventListener('DOMContentLoaded', function () {
   const addPeriodPlanBtn = document.getElementById('addPeriodPlanBtn');
   const containerPlan = document.querySelector('.containerPlan');
   const parentPeriodDiv = document.getElementById('periodDiv');
-  let clonedPeriodCount = 0;
+  let clonedPeriodPlanCount = 0;
 
   const savedPeriodData = localStorage.getItem('periodData');
   if (savedPeriodData) {
     containerPlan.innerHTML = savedPeriodData;
-    clonedPeriodCount = containerPlan.querySelectorAll('.periodDiv').length;
+    clonedPeriodPlanCount = containerPlan.querySelectorAll('.periodDiv').length;
   }
 
   addPeriodPlanBtn.addEventListener('click', function () {
-    if (clonedPeriodCount < 5) {
+    if (clonedPeriodPlanCount < 5) {
       const clonedPeriod = parentPeriodDiv.cloneNode(true);
 
       containerPlan.appendChild(clonedPeriod);
-      clonedPeriodCount++;
+      clonedPeriodPlanCount++;
 
       localStorage.setItem('periodData', containerPlan.innerHTML);
     } else {
       alert('Seriously, if you have more than 10 periods.. your problem is bigger than needing a planner');
     }
   });
-});
+
+  const infoBox = document.getElementById('infoBox');
+  const infoBoxCloseButton = document.getElementById('infoBoxCloseButton');
+
+  // Check if the user has visited before
+  const visitedBefore = localStorage.getItem('visitedBefore');
+
+  if (!visitedBefore) {
+    infoBox.style.display = 'block';
+
+    infoBoxCloseButton.addEventListener('click', function() {
+      infoBox.style.display = 'none';
+      localStorage.setItem('visitedBefore', true);
+    });
+  }
