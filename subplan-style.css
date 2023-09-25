@@ -197,7 +197,7 @@ label {
 }
 
 .inputsmall {
-    width: 30px;
+    width: 110px;
     height: 10px;
 }
 
@@ -291,7 +291,7 @@ label {
 .topOfPageGradeDate {
     background-color: #fff;
     height: 25px;
-    width: 114px;
+    width: 150px;
     border-radius: 3px;
     border: solid;
     padding: 3px;

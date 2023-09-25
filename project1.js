@@ -147,7 +147,7 @@ function saveData() {
   localStorage.setItem('savedData', data);
 }
 
-// List
+// Core Value List
 
 document.addEventListener('DOMContentLoaded', function () {
   const wordBank = document.querySelectorAll('.word');
