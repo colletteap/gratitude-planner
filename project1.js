@@ -187,18 +187,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         order++;
         wordCount++;
+
+        selectedWord.addEventListener('click', function () {
+          const selectedWord = document.createElement('div');
+          selectedWords.removeChild(selectedWord);
+         wordCount--;
+       });
       }
     });
   });
 });
-
-        // Remove selected words to add new
-        
-        selectedWord.addEventListener('click', function () {
-           const selectedWord = document.createElement('div');
-           selectedWords.removeChild(selectedWord);
-          wordCount--;
-        });
 
 // Monthly Calendar
 
