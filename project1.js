@@ -158,6 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Load data from local storage
   const storedData = JSON.parse(localStorage.getItem('selectedWordsData') || '[]');
   storedData.forEach(function (data) {
+    if (wordCount < 6) {
     const selectedWord = document.createElement('div');
     selectedWord.textContent = data.content;
     selectedWord.classList.add('word');
@@ -165,6 +166,7 @@ document.addEventListener('DOMContentLoaded', function () {
     selectedWord.style.order = data.order;
     selectedWords.appendChild(selectedWord);
     wordCount++;
+    }
   });
 
   wordBank.forEach(function (word) {
