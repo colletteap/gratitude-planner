@@ -145,7 +145,7 @@ function saveData() {
   // Save the data to local storage
 
   localStorage.setItem('savedData', data);
-}
+};
 
 // Core Value List
 
@@ -189,14 +189,18 @@ document.addEventListener('DOMContentLoaded', function () {
         wordCount++;
 
         selectedWord.addEventListener('click', function () {
-          const selectedWord = document.createElement('div');
-          selectedWords.removeChild(selectedWord);
-         wordCount--;
-       });
-      }
+          selectedWords.removeChild(this); // Remove the clicked selectedWord
+          wordCount--;
+        
+          // Remove the data from storedData
+          const contentToRemove = this.textContent;
+          storedData.splice(storedData.findIndex(data => data.content === contentToRemove), 1);
+          localStorage.setItem('selectedWordsData', JSON.stringify(storedData));
+        });
+       }});
+      });
     });
-  });
-});
+
 
 // Monthly Calendar
 
