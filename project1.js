@@ -187,20 +187,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
         order++;
         wordCount++;
-
-        selectedWord.addEventListener('click', function () {
-          selectedWords.removeChild(this); // Remove the clicked selectedWord
-          wordCount--;
-        
-          // Remove the data from storedData
-          const contentToRemove = this.textContent;
-          storedData.splice(storedData.findIndex(data => data.content === contentToRemove), 1);
-          localStorage.setItem('selectedWordsData', JSON.stringify(storedData));
-        });
-       }});
-      });
+      }
     });
+  });
 
+  selectedWords.addEventListener('click', function (event) {
+    if (event.target.classList.contains('hoverDelete')) {
+      event.target.remove();
+      wordCount--;
+      order--;
+
+      const updatedData = storedData.filter(data => data.order !==Number(event.target.style.order));
+      localStorage.setItem('selectedWordsData', JSON.stringify(updatedData));
+    }});
+  });
 
 // Monthly Calendar
 
