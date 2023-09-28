@@ -292,6 +292,13 @@ label {
     padding: 3px;
 }
 
+#grade {
+    font-weight: bold;
+    border: none;
+    padding-left: 10px;
+    cursor:grab;
+}
+
 .topOfPageGradeDate {
     background-color: #fff;
     height: 25px;
