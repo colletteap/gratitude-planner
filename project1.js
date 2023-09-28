@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let wordCount = 0;
 
   // Load data from local storage
-  const storedData = JSON.parse(localStorage.getItem('selectedWordsData') || '[]');
+  let storedData = JSON.parse(localStorage.getItem('selectedWordsData') || '[]');
   storedData.forEach(function (data) {
     if (wordCount < 6) {
     const selectedWord = document.createElement('div');
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
       wordCount--;
       order--;
 
-      const updatedData = storedData.filter(data => data.order !==Number(event.target.style.order));
+      storedData = storedData.filter(data => data.order !==Number(event.target.style.order));
       localStorage.setItem('selectedWordsData', JSON.stringify(updatedData));
     }});
   });
