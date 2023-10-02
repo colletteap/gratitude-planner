@@ -47,15 +47,6 @@ h1 {
   align-self: center;
 }
 
-.specialDaysToDoInfo {
-  color: black;
-  font-size: 8px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: right;
-  padding-bottom: 180px;
-  padding-left: 100px;
-}
-
 #specialDaysSnippet {
   width: 150px;
   height: 150px;
@@ -141,13 +132,17 @@ h1 {
 }
 
 .specialDaysToDoInfo {
+  color: black;
+  text-align: right;
+  padding-bottom: 180px;
+  padding-left: 100px;
   padding: 0px;
   margin-bottom: 50px;
   margin-right: 20px;
   width: 160px;
 }
 
-.specialDaysToDoInfo::before {
+.specialDays::before {
   content: 'Space will autopopulate when text is entered into Monthly Calendar';
   font-family: 'AlegreyaLight', sans serif;
   font-size: 14px;
@@ -156,7 +151,7 @@ h1 {
   font-weight: bolder;
 }
 
-.specialDaysToDoInfo:hover::before {
+.specialDays:hover::before {
   opacity: 1;
 }
 
