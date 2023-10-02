@@ -274,8 +274,16 @@ function updateCalendar() {
     dayElement.appendChild(notesContainer);
 
     daysContainer.appendChild(dayElement);
-  }
-}
+  };
+};
+
+const calendarToDoInput = document.querySelectorAll('.calendarToDoInput');
+
+  calendarToDoInput.addEventListener('input', function() {
+    if (this.value.length > 40) {
+      this.value = this.value.slice(0, 40) + '...';
+    }
+  });
 
 updateCalendar();
 
