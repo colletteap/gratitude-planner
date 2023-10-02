@@ -70,8 +70,12 @@ para.addEventListener('click', updateName);
 
 function updateName() {
   const name = prompt('Enter your name');
-  para.textContent = `${name}'s Great Day`;
-}
+  if (name !== null && name !== '') {
+    para.textContent = `${name}'s Great Day`;
+  } else {
+    para.textContent = `My Great Day`;
+  }
+};
 
 // Clickable Sub Plan Div
 
