@@ -240,9 +240,16 @@ function updateCalendar() {
     toDoInput.classList.add("calendarToDoInput");
     toDoInput.placeholder = "Enter to-do items...";
     toDoInput.value = localStorage.getItem(`toDo-${currentYear}-${currentMonth}-${day}`) || '';
-    toDoInput.addEventListener("input", function () {
-      localStorage.setItem(`toDo-${currentYear}-${currentMonth}-${day}`, toDoInput.value);
-    });
+    
+    function limitInput(event) {
+        const input = event.target;
+        if (input.value.length > 20) {
+            input.value = input.value.slice(0, 20) + '...';
+        }
+        localStorage.setItem(`toDo-${currentYear}-${currentMonth}-${day}`, input.value);
+    }
+    
+    toDoInput.addEventListener("input", limitInput);    
 
     const specialEventsContainer = document.createElement("div");
     specialEventsContainer.classList.add("calendarSpecialEventsContainer");
@@ -251,9 +258,16 @@ function updateCalendar() {
     specialEventsInput.classList.add("calendarSpecialEventsInput");
     specialEventsInput.placeholder = "Enter special events...";
     specialEventsInput.value = localStorage.getItem(`specialEvents-${currentYear}-${currentMonth}-${day}`) || '';
-    specialEventsInput.addEventListener("input", function () {
-      localStorage.setItem(`specialEvents-${currentYear}-${currentMonth}-${day}`, specialEventsInput.value);
-    })
+    
+    function limitInput(event) {
+        const input = event.target;
+        if (input.value.length > 20) {
+            input.value = input.value.slice(0, 20) + '...';
+        }
+        localStorage.setItem(`specialEvents-${currentYear}-${currentMonth}-${day}`, input.value);
+    }
+    
+    specialEventsInput.addEventListener("input", limitInput);
 
     const notesContainer = document.createElement("div");
     notesContainer.classList.add("calendarNotesContainer");
@@ -277,13 +291,6 @@ function updateCalendar() {
   };
 };
 
-const calendarToDoInput = document.querySelectorAll('.calendarToDoInput');
-
-  calendarToDoInput.addEventListener('input', function() {
-    if (this.value.length > 40) {
-      this.value = this.value.slice(0, 40) + '...';
-    }
-  });
 
 updateCalendar();
 
@@ -304,7 +311,6 @@ nextMonthButton.addEventListener("click", () => {
   }
   updateCalendar();
 });
-
 
 // Local Storage, Updating and Blur event listener for To Do's
 
