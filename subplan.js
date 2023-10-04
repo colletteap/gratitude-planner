@@ -76,17 +76,24 @@ document.getElementById('pdfButton').addEventListener('click', function () {
 
   // Delete Period Button
 
-  const deletePeriodButton = document.getElementById('buttonPeriodDelete')
+  const deletePeriodButton = document.getElementById('buttonPeriodDelete');
+
   deletePeriodButton.addEventListener('click', function () {
     const allDays = document.querySelectorAll('.day-container');
+    let maxPeriodsDeleted = false;
+  
     allDays.forEach((elementEachDay) => {
-      if (elementEachDay.childElementCount < 7) {
-        alert('Max number of periods deleted!');
-        return;
+      if (elementEachDay.childElementCount < 8) {
+        maxPeriodsDeleted = true;
+      } else {
+        elementEachDay.lastElementChild.remove();
       }
-      elementEachDay.lastElementChild.remove();
-    })
-  });
+    });
+  
+    if (maxPeriodsDeleted) {
+      alert('Max number of periods deleted!');
+    }
+  });  
 
 // Hide/Unhide Day 6
 
