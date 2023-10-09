@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
       order--;
 
       storedData = storedData.filter(data => data.order !==Number(event.target.style.order));
-      localStorage.setItem('selectedWordsData', JSON.stringify(updatedData));
+      localStorage.setItem('selectedWordsData', JSON.stringify(storedData));
     }});
   });
 
