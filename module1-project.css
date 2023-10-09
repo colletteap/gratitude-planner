@@ -8,6 +8,11 @@
   src: url(font/AlegreyaSansSC-Light.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Indie';
+  src: url(font/IndieFlower-Regular.ttf) format('truetype');
+}
+
 .zeyada {
   font-family: 'Zeyada', sans serif;
   font-size: 20px;
@@ -15,6 +20,10 @@
 
 .alegreyaLight {
   font-family: 'AlegreyaLight', sans serif;
+}
+
+.indie {
+  font-family: 'Indie'; sans serif;
 }
 
 body {
@@ -213,7 +222,7 @@ h1 {
 }
 
 .summerCountdownStyle {
-  font-family: 'Zeyada', sans serif;
+  font-family: 'Indie', serif;
   color: white;
   font-size: 20px;
 }
