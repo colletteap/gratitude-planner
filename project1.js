@@ -323,7 +323,11 @@ const todoTextareas = document.querySelectorAll(".calendarToDoInput");
 
 const recentTodoTexts = JSON.parse(localStorage.getItem("recentTodoTexts")) || [];
 
-topToDoDiv.textContent = recentTodoTexts.join("\n");
+function updateToDoList() {
+  topToDoDiv.innerHTML = `<ul>${recentTodoTexts.map(text => `<li>${text}</li>`).join('')}</ul>`;
+}
+
+updateToDoList();
 
 todoTextareas.forEach((calendarToDoInput, _index) => {
   calendarToDoInput.addEventListener("blur", function () {
