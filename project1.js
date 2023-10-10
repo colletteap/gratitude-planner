@@ -353,7 +353,11 @@ const specialDaysTextareas = document.querySelectorAll(".calendarSpecialEventsIn
 
 const recentSpecialDaysTexts = JSON.parse(localStorage.getItem("recentSpecialDaysTexts")) || [];
 
-topSpecialDaysDiv.textContent = recentSpecialDaysTexts.join("\n");
+function updateSpecialDaysList() {
+  topSpecialDaysDiv.innerHTML = `<ul>${recentSpecialDaysTexts.map(text => `<li>${text}</li>`).join('')}</ul>`;
+}
+
+updateSpecialDaysList();
 
 specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
   calendarSpecialEventsInput.addEventListener("blur", function () {
