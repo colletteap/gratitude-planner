@@ -295,6 +295,7 @@ h1 {
   border: 2px solid #aaa;
   border-radius: 2px;
   padding-bottom: 350px;
+  resize: none;
 }
 
 #myJournal {
