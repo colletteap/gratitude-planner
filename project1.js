@@ -66,14 +66,21 @@ function summerCountdown() {
 
 const para = document.getElementById('myGreatDay');
 
+const storedName = localStorage.getItem('userName');
+if (storedName) {
+  para.textContent = `${storedName}'s Great Day`;
+}
+
 para.addEventListener('click', updateName);
 
 function updateName() {
   const name = prompt('Enter your name');
   if (name !== null && name !== '') {
     para.textContent = `${name}'s Great Day`;
+    localStorage.setItem('userName', name);
   } else {
     para.textContent = `My Great Day`;
+    localStorage.removeItem('userName');
   }
 };
 
