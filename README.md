@@ -1,4 +1,4 @@
-# ![a lotus flower](./images/Lotus.png) The Happy Teacher Planner ![a lotus flower](./images/Lotus.png)
+# ![The Happy Planner](./images/thehappyplannertitle.png).
 **Mobile Friendly**<br>
 This website is a teacher planner with a focus on gratitude.<br>
 Some days can be more challenging than others, but with a consistent focus on gratitude and organization, that challenge is easier to overcome. <br>
