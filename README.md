@@ -1,23 +1,46 @@
-# ![The Happy Planner](./images/thehappyplannertitle.png).
-**Mobile Friendly**<br>
-This website is a teacher planner with a focus on gratitude.<br>
-![Happy Planner video](/images/HappyTeacherPlannerOverview.gif)
+# ![The Happy Planner](./images/happyplannerTitle.png)
+![Mobile and Desktop Friendly](./images/MobileDesktop.png)
+![Happy Planner video](/images/HTPIntro.gif)
 
-Some days can be more challenging than others, but with a consistent focus on gratitude and organization, that challenge is easier to overcome. <br>
-Use <strong>My Great Day</strong> to customize the name of your planner. <br>
-Use the <strong>Monthly Calendar</strong> to add <strong>To Do</strong> events, <strong>Special Day</strong> events and Notes to help you stay organized. <br>
-Use <strong>Journal</strong> to journal out your thoughts before or after you start your day; this helps you have mental clarity. <br>
-Use <strong>Core Values</strong> to choose your top 6 core values; use these as a reminder about what is most important to you.<br>
-Use <strong>Self-Care Resources</strong> when you need a break during class or after; videos, community, blogs, meditations and book suggestions.<br>
-Use <strong>Customized Sub-Plan</strong> to create your Substitute Plan and always have it handy. Screenshot it if you are mobile or save as a PDF and print/email to the subsitute teacher or administration.<br>
-![Website Screenshot](./images/TheHappyTeacherPlanner.png)
+Some days can be more challenging than others; focusing on gratitude and organization, that challenge is easier to overcome. <br>
 
-## Link to Website
-This site is available through github pages: [The Happy Teacher Planner](https://colletteap.github.io/gratitude-planner/)
+## ![Link to Website](./images/WebsiteLink.png)
+<ul>
+ <li>This site is available through github pages: [The Happy Teacher Planner](https://colletteap.github.io/gratitude-planner/)</li>
+</ul>
 
-# How to Use
+# ![Website Instructions](./images/HowtoUse.png)
 
-<strong>Monthly Calendar</strong> <br>
+<ul>
+  <li>Use <strong>My Great Day</strong> to customize the name of your planner.</li>
+</ul>
+![My Great Day](./images/MyGreatDay.png)
 
-![Monthly Calendar](./images/MonthlyCalendarButton.png)
+<ul>
+  <li>Use the <strong>Monthly Calendar</strong> to add <strong>To Do</strong> events, <strong>Special Day</strong> events and Notes to help you stay organized.</li>
+</ul>
+![Monthly Calendar](./images/MonthlyCalendar.gif)
 
+<ul>
+  <li>Use <strong>Journal</strong> to journal out your thoughts before or after you start your day; this helps you have mental clarity.</li>
+</ul>
+![Journal](./images/Journal.gif)
+
+<ul>
+  <li>Use <strong>Core Values</strong> to choose your top 6 core values; use these as a reminder about what is most important to you.</li>
+</ul>
+![Core Values](./images/CoreValues.gif)
+
+<ul>
+  <li>Use <strong>Self-Care Resources</strong> when you need a break during class or after; videos, community, blogs, meditations and book suggestions.</li>
+</ul>
+![Self-Care](./images/SelfCare.gif)
+
+<ul>
+  <li>Use <strong>Customized Sub-Plan</strong> to create your Substitute Plan and always have it handy. Screenshot it if you are mobile or save as a PDF and print/email to the subsitute teacher or administration.</li>
+</ul>
+  ![Customized Substitute Planner](./images/CustomSubPlan.gif)
+
+  # ![Appreciation](./images/Appreciation.png)
+  
+  Big thanks to @samwise-nl for coaching me through the Get Coding program so far!
