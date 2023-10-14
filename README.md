@@ -1,6 +1,8 @@
 # ![The Happy Planner](./images/thehappyplannertitle.png).
 **Mobile Friendly**<br>
 This website is a teacher planner with a focus on gratitude.<br>
+![Happy Planner video](/images/HappyTeacherPlannerOverview.gif)
+
 Some days can be more challenging than others, but with a consistent focus on gratitude and organization, that challenge is easier to overcome. <br>
 Use <strong>My Great Day</strong> to customize the name of your planner. <br>
 Use the <strong>Monthly Calendar</strong> to add <strong>To Do</strong> events, <strong>Special Day</strong> events and Notes to help you stay organized. <br>
