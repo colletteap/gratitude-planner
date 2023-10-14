@@ -1,4 +1,4 @@
-# ![The Happy Planner](./images/happyplannerTitle.png)
+# ![The Happy Planner](./images/happyteacherplannerTitle.png)
 ![Mobile and Desktop Friendly](./images/MobileDesktop.png)
 ![Happy Planner video](/images/HTPIntro.gif)
 
