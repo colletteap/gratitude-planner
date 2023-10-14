@@ -27,7 +27,7 @@ Some days can be more challenging than others; focusing on gratitude and organiz
   <li>Use <strong>Journal</strong> to journal out your thoughts before or after you start your day; this helps you have mental clarity.</li>
 </ul>
 
-![Journal](./images/Journal.gif)
+![Journal](./images/Journal.png)
 
 <ul>
   <li>Use <strong>Core Values</strong> to choose your top 6 core values; use these as a reminder about what is most important to you.</li>
