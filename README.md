@@ -39,7 +39,7 @@ Some days can be more challenging than others. By focusing on gratitude and orga
   <li>Use <strong>Self-Care Resources</strong> when you need a break during class or after; videos, community, blogs, meditations and book suggestions.</li>
 </ul>
 
-![Self-Care](./images/SelfCare.gif)
+![Self-Care](./images/SelfCare.png)
 
 <ul>
   <li>Use <strong>Customized Sub-Plan</strong> to create your Substitute Plan and always have it handy. Screenshot it if you are mobile or save as a PDF and print/email to the subsitute teacher or administration.</li>
