@@ -42,7 +42,7 @@ inputFields.forEach(inputField => {
 // Clickable PDF
 
 document.getElementById('pdfButton').addEventListener('click', function () {
-  window.location.href = "./While_You_Were_Away.pdf", '_blank';
+  window.open("./While_You_Were_Away.pdf", '_blank');
 });
 
 // Add Period Button
