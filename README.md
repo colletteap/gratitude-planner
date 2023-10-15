@@ -42,7 +42,7 @@ Some days can be more challenging than others. By focusing on gratitude and orga
 ![Self-Care](./images/SelfCare.png)
 
 <ul>
-  <li>Use <strong>Customized Sub-Plan</strong> to create your Substitute Plan and always have it handy. Screenshot it if you are mobile or save as a PDF and print/email to the subsitute teacher or administration.</li>
+  <li>Use <strong>Customized Sub-Plan</strong> to create your Substitute Plan and always have it handy. Screenshot if you are mobile or save as a PDF and print/email to the subsitute teacher or administration.</li>
 </ul>
 
   ![Customized Substitute Planner](./images/CustomSubPlan.gif)
