@@ -2,7 +2,7 @@
 ![Mobile and Desktop Friendly](./images/MobileDesktop.png)
 ![Happy Planner video](/images/HTPIntro.gif)
 
-Some days can be more challenging than others; focusing on gratitude and organization, that challenge is easier to overcome. <br>
+Some days can be more challenging than others. By focusing on gratitude and organization, that challenge is easier to overcome. <br>
 
 ## ![Link to Website](./images/WebsiteLink.png)
 <ul>
@@ -16,37 +16,43 @@ Some days can be more challenging than others; focusing on gratitude and organiz
 </ul>
 
 ![My Great Day](./images/MyGreatDay.png)
-
+<br>
+<br>
 <ul>
   <li>Use the <strong>Monthly Calendar</strong> to add <strong>To Do</strong> events, <strong>Special Day</strong> events and Notes to help you stay organized.</li>
 </ul>
 
 ![Monthly Calendar](./images/MonthlyCalendar.png)
-
+<br>
+<br>
 <ul>
   <li>Use <strong>Journal</strong> to journal out your thoughts before or after you start your day; this helps you have mental clarity.</li>
 </ul>
 
 ![Journal](./images/Journal.png)
-
+<br>
+<br>
 <ul>
   <li>Use <strong>Core Values</strong> to choose your top 6 core values; use these as a reminder about what is most important to you.</li>
 </ul>
 
-![Core Values](./images/CoreValues.gif)
-
+![Core Values](./images/CoreValues.png)
+<br>
+<br>
 <ul>
   <li>Use <strong>Self-Care Resources</strong> when you need a break during class or after; videos, community, blogs, meditations and book suggestions.</li>
 </ul>
 
 ![Self-Care](./images/SelfCare.gif)
-
+<br>
+<br>
 <ul>
   <li>Use <strong>Customized Sub-Plan</strong> to create your Substitute Plan and always have it handy. Screenshot it if you are mobile or save as a PDF and print/email to the subsitute teacher or administration.</li>
 </ul>
 
   ![Customized Substitute Planner](./images/CustomSubPlan.gif)
-
+<br>
+<br>
   # ![Appreciation](./images/Appreciation.png)
   
   Big thanks to @samwise-nl for coaching me through the Get Coding program so far!
