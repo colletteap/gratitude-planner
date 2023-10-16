@@ -1,15 +1,15 @@
-# ![The Happy Teacher Planner](./images/thehappyteacherplannerTitle.png)
+# [The Happy Teacher Planner]
 ![Mobile and Desktop Friendly](./images/MobileDesktop.png)
 ![Happy Planner video](/images/HTPIntro.gif)
 
 Some days can be more challenging than others. By focusing on gratitude and organization, that challenge is easier to overcome. <br>
 
-## ![Link to Website](./images/WebsiteLink.png)
+## [Website Link]
 <ul>
  <li>This site is available through github pages: [The Happy Teacher Planner](https://colletteap.github.io/gratitude-planner/)</li>
 </ul>
 
-# ![Website Instructions](./images/HowtoUse.png)
+## [Website Instructions]
 
 <ul>
   <li>Use <strong>My Great Day</strong> to customize the name of your planner.</li>
@@ -47,6 +47,6 @@ Some days can be more challenging than others. By focusing on gratitude and orga
 
   ![Customized Substitute Planner](./images/CustomSubPlan.gif)
 
-  # ![Appreciation](./images/Appreciation.png)
+  # [Appreciation]
   
   Big thanks to @samwise-nl for coaching me through the Get Coding program so far!
