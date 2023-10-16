@@ -339,7 +339,7 @@ updateToDoList();
 todoTextareas.forEach((calendarToDoInput, _index) => {
   calendarToDoInput.addEventListener("blur", function () {
     document.getElementById("toDoSnippet").hidden = false;
-    document.getElementById("toDoInfo").style.display = "none";
+   
     const todoText = calendarToDoInput.value;
 
     recentTodoTexts.unshift(todoText);
@@ -376,7 +376,6 @@ updateSpecialDaysList();
 specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
   calendarSpecialEventsInput.addEventListener("blur", function () {
     document.getElementById("specialDaysSnippet").hidden = false;
-    document.getElementById("specialDaysInfo").style.display = "none";
     
     const specialDaysText = calendarSpecialEventsInput.value;
 
@@ -393,3 +392,29 @@ specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
   
 });
 
+// Showing and Hiding Info Message on Special Days
+
+let specialDaysUpdate = document.getElementById('specialDaysUpdate');
+let specialDaysInfo = document.getElementById('specialDaysInfo');
+
+if (specialDaysUpdate.textContent.trim() !== "") {
+
+  specialDaysInfo.style.display = 'none';
+} else {
+ 
+  specialDaysInfo.style.display = 'block';
+}
+
+//Showing and Hiding Info Message on To Do
+
+let toDoUpdate = document.getElementById('toDoUpdate');
+let toDoInfo = document.getElementById('toDoInfo');
+
+
+if (toDoUpdate.textContent.trim() !== "") {
+
+  toDoInfo.style.display = 'none';
+} else {
+
+  toDoInfo.style.display = 'block';
+}
