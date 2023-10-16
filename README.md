@@ -5,9 +5,7 @@
 Some days can be more challenging than others. By focusing on gratitude and organization, that challenge is easier to overcome. <br>
 
 # **Website Link**
-<ul>
- <li>This site is available through github pages: [The Happy Teacher Planner](https://colletteap.github.io/gratitude-planner/)</li>
-</ul>
+- This site is available through github pages: [The Happy Teacher Planner](https://colletteap.github.io/gratitude-planner/)
 
 # **Website Instructions**
 
