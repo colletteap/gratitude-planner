@@ -203,13 +203,17 @@ h1 {
 }
 
 .extraLeftPlayButton {
-  padding-left: 70px;
+  padding-left: 80px;
+}
+
+.cvPlayButton {
+padding-left: 100px;
 }
 
 .playSubPlan {
   font-size: 25px;
   text-align: right;
-  margin-left: 50px;
+  margin-left: 35px;
   margin-bottom: 100px;
 }
 
