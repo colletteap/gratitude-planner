@@ -348,7 +348,7 @@ todoTextareas.forEach((calendarToDoInput, _index) => {
       recentTodoTexts.pop();
     }
 
-    topToDoDiv.textContent = recentTodoTexts.join("\n");
+    updateToDoList();
 
     localStorage.setItem("recentTodoTexts", JSON.stringify(recentTodoTexts));
   });
@@ -366,15 +366,15 @@ function updateSpecialDaysList() {
   
   const specialDaysDiv = document.querySelector('.specialDaysInfo');
   
-  if (specialDaysDiv) {
-    specialDaysDiv.style.display = 'none';
-  }
 }
 
 updateSpecialDaysList();
 
 specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
   calendarSpecialEventsInput.addEventListener("blur", function () {
+
+    //if calendarSpecialEventsInput is empty, do not add value to list
+
     document.getElementById("specialDaysSnippet").hidden = false;
     
     const specialDaysText = calendarSpecialEventsInput.value;
@@ -384,8 +384,8 @@ specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
     if (recentSpecialDaysTexts.length > 4) {
       recentSpecialDaysTexts.pop();
     }
-
-    topSpecialDaysDiv.textContent = recentSpecialDaysTexts.join("\n");
+//
+    updateSpecialDaysList();
 
     localStorage.setItem("recentSpecialDaysTexts", JSON.stringify(recentSpecialDaysTexts));
   });
