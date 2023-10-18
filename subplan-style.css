@@ -20,8 +20,8 @@
 }
 
 body {
-    font-family: 'AlegreyaLight', sans serif;
-    background-color: #d38023;
+    font-family: 'DM Serif Display', serif;
+    background-color: #99A985;
 }
 
 h1 {
@@ -69,7 +69,7 @@ button {
     margin: 0 auto;
     border: 2px solid #35645E; 
     padding: 20px;
-    background-color: #e4b05a;
+    background-color: #dedacf;
 }
 
 #infoBox {
@@ -97,7 +97,7 @@ button {
 #homepageButton {
     margin: 0 auto;
     margin-bottom: 10px;
-    background-color: #a55321;
+    background-color: #8B3B59;
     color:#fff;
     font-weight: lighter;
     border:#fff 1px solid;
