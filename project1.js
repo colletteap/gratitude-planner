@@ -5,7 +5,7 @@ const phrases = [
   'I choose to be kind to all, including myself',
   'I create an environment that supports my well-being',
   'I love myself first so that I may love others',
-  'I am loved',
+  'I let go of any bad thoughts invading my day',
 ];
 
 const randomIndex = Math.floor(Math.random() * phrases.length);
@@ -117,7 +117,7 @@ const sections = [
   { id: "mainJournal", showDiv: "myJournal" },
   { id: "calendar", showDiv: "monthlyCalendarDiv" },
   { id: "coreValuesCard", showDiv: "myCoreValues" },
-  { id: "selfCareCard", showDiv: "selfCareContainerDiv" }
+  { id: "selfCareCard", showDiv: "selfCareContainerDiv" },
 ];
 
 sections.forEach(section => {
@@ -126,6 +126,7 @@ sections.forEach(section => {
       document.getElementById(otherSection.showDiv).hidden = otherSection.showDiv !== section.showDiv;
     });
     showDivById(section.showDiv);
+    document.getElementById("extra-top-padding").hidden = true;
   });
 });
 
@@ -135,6 +136,7 @@ function showDivById(divId) {
   divToShow.classList.remove('hiddenDiv')
   divToShow.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
 //Saving to Local Storage
@@ -340,7 +342,11 @@ todoTextareas.forEach((calendarToDoInput, _index) => {
   calendarToDoInput.addEventListener("blur", function () {
     document.getElementById("toDoSnippet").hidden = false;
    
-    const todoText = calendarToDoInput.value;
+    const todoText = calendarToDoInput.value.trim();
+
+    if (todoText !== "") {
+      recentTodoTexts.unshift(todoText);
+    
 
     recentTodoTexts.unshift(todoText);
 
@@ -351,6 +357,7 @@ todoTextareas.forEach((calendarToDoInput, _index) => {
     updateToDoList();
 
     localStorage.setItem("recentTodoTexts", JSON.stringify(recentTodoTexts));
+    }
   });
 });
 
@@ -377,7 +384,10 @@ specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
 
     document.getElementById("specialDaysSnippet").hidden = false;
     
-    const specialDaysText = calendarSpecialEventsInput.value;
+    const specialDaysText = calendarSpecialEventsInput.value.trim();
+
+    if (specialDaysText !== "") {
+      recentSpecialDaysTexts.unshift(specialDaysText);
 
     recentSpecialDaysTexts.unshift(specialDaysText);
 
@@ -388,6 +398,7 @@ specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
     updateSpecialDaysList();
 
     localStorage.setItem("recentSpecialDaysTexts", JSON.stringify(recentSpecialDaysTexts));
+    }
   });
   
 });
