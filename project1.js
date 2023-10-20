@@ -346,18 +346,17 @@ todoTextareas.forEach((calendarToDoInput, _index) => {
 
     if (todoText !== "") {
       recentTodoTexts.unshift(todoText);
-    
 
-    recentTodoTexts.unshift(todoText);
 
-    if (recentTodoTexts.length > 4) {
+    if (recentTodoTexts.length > 6) {
       recentTodoTexts.pop();
     }
 
     updateToDoList();
 
     localStorage.setItem("recentTodoTexts", JSON.stringify(recentTodoTexts));
-    }
+
+  }
   });
 });
 
@@ -380,8 +379,6 @@ updateSpecialDaysList();
 specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
   calendarSpecialEventsInput.addEventListener("blur", function () {
 
-    //if calendarSpecialEventsInput is empty, do not add value to list
-
     document.getElementById("specialDaysSnippet").hidden = false;
     
     const specialDaysText = calendarSpecialEventsInput.value.trim();
@@ -389,9 +386,7 @@ specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
     if (specialDaysText !== "") {
       recentSpecialDaysTexts.unshift(specialDaysText);
 
-    recentSpecialDaysTexts.unshift(specialDaysText);
-
-    if (recentSpecialDaysTexts.length > 4) {
+    if (recentSpecialDaysTexts.length > 6) {
       recentSpecialDaysTexts.pop();
     }
 //
