@@ -44,8 +44,8 @@ header {
   align-content:space-evenly;
 }
 
-.fixed-top {
-  position: fixed;
+.position {
+  position: static;
   top: 0;
   right: 0;
   left: 0;
@@ -64,7 +64,6 @@ body {
   margin: 0;
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
-  padding-top: 100px; /* Adjusted margin-top value */
   background: #fff8e7;
 }
 
@@ -144,7 +143,7 @@ h1 {
 }
 
 #randomPhrase {
-  font-size: 7em;
+  font-size: 6em;
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: center;
@@ -157,9 +156,8 @@ h1 {
 
 #randomPhrase::before,
 #randomPhrase::after {
-  content: '-';
-  margin-right: 0.6em;
-  color: #686868;
+  content: "     ";
+  margin: 1.3em;
 }
 
 @media (max-width: 600px) {
@@ -267,15 +265,15 @@ h1 {
   opacity: 1;
 }
 
-#summerCountdown {
+#countdown {
   background: #ec8b75;
  text-align: center;
- padding-left: 35px;
+ padding-left: 65px;
  padding-top: 7px;
   height: 50px;
 }
 
-.summerCountdownStyle {
+.countdownStyle {
   font-family: 'DM Serif Display', serif;
   color: white;
   font-size: 14px;
@@ -297,7 +295,7 @@ h1 {
 }
 
 #selfCareCard {
-  background-color: #5E6514;
+  background-color: #586959;
   height: 50px;
   padding-top: 10px;
   padding-left: 60px;
