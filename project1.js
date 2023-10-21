@@ -17,50 +17,57 @@ phraseElement.textContent = randomPhrase;
 
 // Summer Countdown
 
-const button = document.getElementById('summerCountdown');
+const countdowns = [
+  {
+    date: new Date('2023-11-13T00:00:00'),
+    message: 'Happy Long Weekend in'
+  },
+  {
+    date: new Date('2024-03-22T00:00:00'),
+    message: 'Happy Easter in'
+  },
+  {
+    date: new Date('2024-06-21T15:00:00'),
+    message: 'Summer Starts in'
+  }
+];
 
-button.addEventListener('click', summerCountdown);
+let currentCountdownIndex = 0;
+let countdownStarted = false;
 
-function summerCountdown() {
-
-  // Set date countdown is to end
-
-  const eventDate = new Date('2024-06-21T15:00:00');
-
-  // Get current date and time
+function updateCountdown() {
+  const eventDate = countdowns[currentCountdownIndex].date;
+  const message = countdowns[currentCountdownIndex].message;
 
   const currentDate = new Date();
-
-  // Calculate time difference in seconds
-
   const timeDifference = Math.floor((eventDate - currentDate) / 1000);
+
   if (timeDifference > 0) {
-
-    // Calculate days, hours, minutes, and seconds
-
     let days = Math.floor(timeDifference / (60 * 60 * 24));
     let hours = Math.floor((timeDifference % (60 * 60 * 24)) / (60 * 60));
     let minutes = Math.floor((timeDifference % (60 * 60)) / 60);
     let seconds = Math.floor(timeDifference % 60);
 
-    // Display countdown
+    const countdownElement = document.getElementById('countdown');
+    countdownElement.textContent = `${message} in: ${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
+    countdownElement.classList.add('countdownStyle');
 
-    const countdownElement = document.getElementById('summerCountdown');
-    countdownElement.textContent = `Summer starts in: ${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
-    countdownElement.classList.add('summerCountdownStyle');
-
-    // Update countdown every second
-
-    setTimeout(summerCountdown, 1000);
+    setTimeout(updateCountdown, 1000);
   } else {
-
-    // If event has already occurred
-
-    const countdownElement = document.getElementById('summerCountdown');
-    countdownElement.textContent = 'Enjoy summer break!';
-    countdownElement.classList.add('summerCountdownStyle');
+    currentCountdownIndex = (currentCountdownIndex + 1) % countdowns.length;
+    updateCountdown();
   }
 }
+
+const countdownElement = document.getElementById('countdown');
+countdownElement.addEventListener('click', () => {
+  if (!countdownStarted) {
+    countdownStarted = true;
+    updateCountdown();
+  }
+});
+
+
 
 //Customize Planner Name
 
@@ -134,7 +141,6 @@ sections.forEach(section => {
 function showDivById(divId) {
   const divToShow = document.getElementById(divId);
   divToShow.classList.remove('hiddenDiv')
-  divToShow.scrollIntoView({ behavior: 'smooth' });
 }
 
 
@@ -254,15 +260,15 @@ function updateCalendar() {
     toDoInput.placeholder = "Enter to-do items...";
     toDoInput.value = localStorage.getItem(`toDo-${currentYear}-${currentMonth}-${day}`) || '';
     
-    function limitInput(event) {
-        const input = event.target;
-        if (input.value.length > 20) {
-            input.value = input.value.slice(0, 20) + '...';
+    function limittdInput(event) {
+        const tdinput = event.target;
+        if (tdinput.value.length > 20) {
+            tdinput.value = tdinput.value.slice(0, 20) + '...';
         }
-        localStorage.setItem(`toDo-${currentYear}-${currentMonth}-${day}`, input.value);
+        localStorage.setItem(`toDo-${currentYear}-${currentMonth}-${day}`, tdinput.value);
     }
     
-    toDoInput.addEventListener("input", limitInput);    
+    toDoInput.addEventListener("input", limittdInput);    
 
     const specialEventsContainer = document.createElement("div");
     specialEventsContainer.classList.add("calendarSpecialEventsContainer");
