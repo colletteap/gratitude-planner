@@ -20,15 +20,15 @@ phraseElement.textContent = randomPhrase;
 const countdowns = [
   {
     date: new Date('2023-11-13T00:00:00'),
-    message: 'Happy Long Weekend in'
+    message: 'Happy Long Weekend'
   },
   {
     date: new Date('2024-03-22T00:00:00'),
-    message: 'Happy Easter in'
+    message: 'Happy Easter'
   },
   {
     date: new Date('2024-06-21T15:00:00'),
-    message: 'Summer Starts in'
+    message: 'Summer Starts'
   }
 ];
 
