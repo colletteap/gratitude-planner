@@ -597,8 +597,9 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: solid;
+    border: solid 0.3px;
     border-radius: 2px;
+    margin-bottom: 5px;
 }
 
 #periodDiv {
