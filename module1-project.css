@@ -187,18 +187,36 @@ h1 {
   max-width:400px;
 }
 
+.extra-left-padding {
+  padding-left: 40px;
+}
+
 #extra-top-padding{
   padding-top: 150px;
 }
 
 .dynamicContainer {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap onto new lines */
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "left-menu quote-div quote-div"
+    "left-menu quote-div quote-div"
+    "left-menu quote-div quote-div";
   justify-content: space-around;
   align-items: baseline;
   column-gap: 5px;
   row-gap: 10px;
   width: 100vw;
+}
+
+.left-menu { 
+  grid-area: left-menu; 
+}
+
+.quote-div { 
+  grid-area: quote-div; 
 }
 
 .card {
