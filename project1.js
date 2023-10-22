@@ -6,6 +6,13 @@ const phrases = [
   'I create an environment that supports my well-being',
   'I love myself first so that I may love others',
   'I let go of any bad thoughts invading my day',
+  'Even on your toughest days, you are still someones favorite teacher',
+  'You are so much more than just a teacher',
+  'Teaching is tough, but so are you',
+  'The fact that you worry about being a good teacher, means that you already are',
+  'Every feeling you have during your day is valid',
+  'Pouring from an empty cup is not worth it',
+  'Thank you for making a difference every day',
 ];
 
 const randomIndex = Math.floor(Math.random() * phrases.length);
