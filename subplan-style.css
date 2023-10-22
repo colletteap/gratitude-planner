@@ -453,7 +453,7 @@ label {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3px;
+    gap: 10px;
     margin-bottom: 10px;
 }
 
