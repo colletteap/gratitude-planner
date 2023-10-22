@@ -30,18 +30,22 @@ li, a {
 
 header {
   display: flex;
-  justify-content: space-between;
   padding: 30px 10%;
   width: 100vw;
-  gap: 15rem;
+  gap: 40px;
   background-color: #8B3B59;
 }
 
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   background-color: #8B3B59;
-  align-content:space-evenly;
+}
+
+.flex-grow{
+  flex-grow: 1;
+  width: 400px;
 }
 
 .position {
