@@ -1,17 +1,3 @@
-@font-face {
-  font-family: 'Zeyada';
-  src: url(font/Zeyada-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'AlegreyaLight';
-  src: url(font/AlegreyaSansSC-Light.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Indie';
-  src: url(font/IndieFlower-Regular.ttf) format('truetype');
-}
 
 * {
   box-sizing: border-box;
@@ -98,7 +84,7 @@ p {
 .background-img {
   width: auto; 
     height: auto; 
-    background-image: url('./images/background-apple-trans.png'); 
+    background-image: url('./images/bgmain1.png'); 
     background-size:cover; 
     background-repeat: inherit;
     background-position: center;
@@ -190,6 +176,11 @@ h1 {
 
 .extra-left-padding {
   padding-left: 40px;
+  margin-left: 200px;
+}
+
+.extra-left-margin {
+  margin-left: 230px;;
 }
 
 #extra-top-padding{
