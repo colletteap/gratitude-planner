@@ -6,13 +6,13 @@ const phrases = [
   'I create an environment that supports my well-being',
   'I love myself first so that I may love others',
   'I let go of any bad thoughts invading my day',
-  'Even on your toughest days, you are still someones favorite teacher',
-  'You are so much more than just a teacher',
-  'Teaching is tough, but so are you',
-  'The fact that you worry about being a good teacher, means that you already are',
-  'Every feeling you have during your day is valid',
-  'Pouring from an empty cup is not worth it',
-  'Thank you for making a difference every day',
+  'you matter - especially on the tough days',
+  'you are so much more than just a teacher',
+  'being an effective teacher can be challenging',
+  'you feel stretched thin because you care',
+  'every feeling you have during your day is valid',
+  'an empty cup pours nothing',
+  'thank you for making a difference',
 ];
 
 const randomIndex = Math.floor(Math.random() * phrases.length);
@@ -125,13 +125,14 @@ function displayJournalPrompt() {
   statementElement.textContent = selectJournalPrompt();
 }
 
-// Hide/Show Journal and Core Values Div
+// Hide/Show Journal, Monthly Calendar, Core Values and Self Care Divs
+
 
 const sections = [
   { id: "mainJournal", showDiv: "myJournal" },
   { id: "calendar", showDiv: "monthlyCalendarDiv" },
   { id: "coreValuesCard", showDiv: "myCoreValues" },
-  { id: "selfCareCard", showDiv: "selfCareContainerDiv" },
+  { id: "selfCareCard", showDiv: "selfCareContainerDiv" }
 ];
 
 sections.forEach(section => {
@@ -140,7 +141,7 @@ sections.forEach(section => {
       document.getElementById(otherSection.showDiv).hidden = otherSection.showDiv !== section.showDiv;
     });
     showDivById(section.showDiv);
-    document.getElementById("extra-top-padding").hidden = true;
+    document.getElementById("quote-container").hidden = true;
   });
 });
 
@@ -148,6 +149,7 @@ sections.forEach(section => {
 function showDivById(divId) {
   const divToShow = document.getElementById(divId);
   divToShow.classList.remove('hiddenDiv')
+  divToShow.scrollIntoView({ behavior: 'smooth' });
 }
 
 

@@ -164,21 +164,12 @@ h1 {
   row-gap: 20px;
   min-height: 1000px;
   margin-top: 70px;
-  width: 100vw;
+  width: 400px;
   height: 60vh;
 }
 
 .top-margin {
   margin-top: 90px;
-}
-
-.smWidth{
-  max-width:400px;
-}
-
-.extra-left-padding {
-  padding-left: 40px;
-  margin-left: 170px;
 }
 
 .extra-left-margin {
@@ -189,19 +180,21 @@ h1 {
   padding-top: 150px;
 }
 
+@media screen and (max-width: 600px) {
+  #extra-top-padding{
+    padding-top: 0px;
+  }
+  .top-margin {
+    margin-top:0px;
+  }
+}
+
 .dynamicContainer {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "left-menu quote-div quote-div"
-    "left-menu quote-div quote-div"
-    "left-menu quote-div quote-div";
-  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: baseline;
-  column-gap: 5px;
-  row-gap: 10px;
   width: 100%;
 }
 
