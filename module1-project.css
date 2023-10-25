@@ -139,7 +139,7 @@ h1 {
   height: 70vh;
   width: 70vw;
   margin: 0;
-  margin-right: 100px;
+  padding-right: 120px;
 }
 
 #randomPhrase::before,
@@ -163,13 +163,13 @@ h1 {
   column-gap: 20px;
   row-gap: 20px;
   min-height: 1000px;
-  margin-top: 150px;
+  margin-top: 70px;
   width: 100vw;
   height: 60vh;
 }
 
 .top-margin {
-  margin-top: 70px;
+  margin-top: 90px;
 }
 
 .smWidth{
