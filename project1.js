@@ -246,7 +246,8 @@ function updateCalendar() {
 
   const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
   const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-
+ 
+  
   daysContainer.innerHTML = '';
 
   for (let i = 0; i < firstDayOfMonth; i++) {
