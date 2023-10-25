@@ -152,8 +152,6 @@ function showDivById(divId) {
   divToShow.scrollIntoView({ behavior: 'smooth' });
 }
 
-
-
 //Saving to Local Storage
 
 const dataInput = document.getElementById('input');
