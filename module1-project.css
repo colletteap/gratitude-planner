@@ -16,9 +16,11 @@ li, a {
 
 header {
   display: flex;
+  position: fixed;
   padding: 30px 10%;
-  width: 100vw;
+  width: 100%;
   gap: 40px;
+  margin: 0;
   background-color: #8B3B59;
 }
 
@@ -35,12 +37,6 @@ header {
   width: 400px;
 }
 
-.position {
-  position: static;
-  top: 0;
-  right: 0;
-  left: 0;
-}
 
 .logo {
   cursor: pointer;
@@ -54,6 +50,7 @@ a:hover {
 body {
   margin: 0;
   height: 100vh;
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
   background: #fff8e7;
 }
@@ -135,7 +132,6 @@ h1 {
 
 #randomPhrase {
   font-size: 6em;
-  text-transform: uppercase;
   letter-spacing: 5px;
   text-align: center;
   font-weight: 100;
@@ -143,6 +139,7 @@ h1 {
   height: 70vh;
   width: 70vw;
   margin: 0;
+  margin-right: 100px;
 }
 
 #randomPhrase::before,
@@ -166,8 +163,13 @@ h1 {
   column-gap: 20px;
   row-gap: 20px;
   min-height: 1000px;
+  margin-top: 150px;
   width: 100vw;
   height: 60vh;
+}
+
+.top-margin {
+  margin-top: 70px;
 }
 
 .smWidth{
@@ -176,7 +178,7 @@ h1 {
 
 .extra-left-padding {
   padding-left: 40px;
-  margin-left: 200px;
+  margin-left: 170px;
 }
 
 .extra-left-margin {
@@ -200,7 +202,7 @@ h1 {
   align-items: baseline;
   column-gap: 5px;
   row-gap: 10px;
-  width: 100vw;
+  width: 100%;
 }
 
 .left-menu { 
