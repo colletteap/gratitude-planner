@@ -1,4 +1,4 @@
-# ![The Happy Teacher Planner](./images/happyteacherplannerTitle.png)
+# ![The Happy Teacher Planner](./images/new-logo.png)
 ![Mobile and Desktop Friendly](./images/MobileDesktopreadme.png)
 ![Happy Planner video](/images/teach-planner.gif)
 
