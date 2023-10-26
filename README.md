@@ -38,5 +38,5 @@ Some days can be more challenging than others. By focusing on gratitude and orga
   Big thanks to @samwise-nl for coaching me through the Get Coding program so far!
 ******
   # **Freebies**
-  #### Click here for free [While You Were Away PDF](.gratitude-planner/While_You_Were_Away.pdf)
+  #### Click here for free [While You Were Away PDF](./While_You_Were_Away.pdf)
   ![While You Were Away](./images/welcomeback.png)
