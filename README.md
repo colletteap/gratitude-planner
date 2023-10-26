@@ -1,6 +1,6 @@
 # ![The Happy Teacher Planner](./images/new-logo.png)
 ![Mobile and Desktop Friendly](./images/MobileDesktopreadme.png)
-![Happy Planner video](/images/teach-planner.gif)
+![Happy Planner video](/images/Planner.gif)
 
 Some days can be more challenging than others. By focusing on gratitude and organization, that challenge is easier to overcome. <br>
 
@@ -23,7 +23,7 @@ Some days can be more challenging than others. By focusing on gratitude and orga
 ******
 #### Use <strong>Core Values</strong> to choose your top 6 core values; use these as a reminder about what is most important to you.
 
-![Core Values](./images/CoreValuesreadme.png)
+![Core Values](./images/CoreValues-rm.png)
 ******
 #### Use <strong>Self-Care Resources</strong> when you need a break during class or after; videos, community, blogs, meditations and book suggestions.
 
