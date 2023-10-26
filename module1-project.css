@@ -144,9 +144,6 @@ h1 {
   width: 600px;
 }
 
-#extra-top-padding{
-  padding-top: 60px;
-}
 
 .dynamicContainer {
   display: flex;
