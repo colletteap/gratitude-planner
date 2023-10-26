@@ -11,7 +11,7 @@ Some days can be more challenging than others. By focusing on gratitude and orga
 
 #### Use <strong>My Great Day</strong> to customize the name of your planner.
 
-![My Great Day](./images/MyGreatDayreadme.png)
+![My Great Day](./images/MyGreatDay-rm.png)
 ******
 #### Use the <strong>Monthly Calendar</strong> to add <strong>To Do</strong> events, <strong>Special Day</strong> events and Notes to help you stay organized.
 
