@@ -49,7 +49,7 @@ a:hover {
 
 body {
   margin: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   background: #fff8e7;
@@ -136,8 +136,8 @@ h1 {
   text-align: center;
   font-weight: 100;
   color: #586959;
-  height: 70vh;
-  width: 70vw;
+  height: 70%;
+  width: 70%;
   margin: 0;
   padding-right: 120px;
 }
@@ -159,7 +159,7 @@ h1 {
   min-height: 1000px;
   margin-top: 70px;
   width: 400px;
-  height: 60vh;
+  height: 60%;
 }
 
 .top-margin {
@@ -728,9 +728,7 @@ p1 {
 }
 
 @media screen and (max-width: 600px) {
-  
   #extra-top-padding{
     padding-top: 0;
   }
-
 } 
