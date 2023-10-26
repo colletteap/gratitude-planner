@@ -23,7 +23,7 @@ Some days can be more challenging than others. By focusing on gratitude and orga
 ******
 #### Use <strong>Core Values</strong> to choose your top 6 core values; use these as a reminder about what is most important to you.
 
-![Core Values](./images/CoreValues-rm.png)
+![Core Values](./images/CoreValue-rm.png)
 ******
 #### Use <strong>Self-Care Resources</strong> when you need a break during class or after; videos, community, blogs, meditations and book suggestions.
 
