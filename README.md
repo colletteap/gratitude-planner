@@ -15,7 +15,7 @@ Some days can be more challenging than others. By focusing on gratitude and orga
 ******
 #### Use the <strong>Monthly Calendar</strong> to add <strong>To Do</strong> events, <strong>Special Day</strong> events and Notes to help you stay organized.
 
-![Monthly Calendar](./images/MonthlyCalendarreadme.png)
+![Monthly Calendar](./images/MonthlyCalendar-rm.png)
 ******
 #### Use <strong>Journal</strong> to journal out your thoughts before or after you start your day; this helps you have mental clarity.
 
