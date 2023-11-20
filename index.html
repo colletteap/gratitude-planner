@@ -18,410 +18,441 @@
         rel="stylesheet">
 </head>
 
-<body class="background-img">
-    <header class="header">
-        <div class="flex-grow">
-            <img class="logo" src="images/thtp-logo-white.png" alt="logo">
+<body>
+
+    <div>
+        <h1>The Happy Teacher Planner</h1>
+        <h1 id="randomPhrase"></h1>
+
+    </div>
+
+    <div class="container">
+        <div class="dynamicContainer">
+            <div class="containerColumn">
+
+                <div class="card myGreatDay">
+
+                    <p id="myGreatDay"><strong>My</strong> Great Day</p>
+
+                </div>
+
+                <div id="calendar" class="card">
+
+                    <p>Monthly Calendar</p>
+
+                    <div class="arrowImg">
+
+                        <img src="images/arrow.png" alt="arrow">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="containerColumn">
+
+                <div class="card specialDays">
+
+                    <div id="specialDaysInfo">
+
+                    </div>
+
+                    <div class="specialDaysHome">
+
+                        <div id="specialDaysSnippet">
+
+                            <p id="specialDaysUpdate">
+                                my birthday
+                            </p>
+
+                        </div>
+
+                        <p style="margin-top: 10px">Special Days</p>
+
+                    </div>
+
+                </div>
+
+                <div id="toDoCard" class="card toDoCard">
+
+                    <div id="toDoInfo">
+
+                    </div>
+                    
+                    <div class="toDoHome">
+
+                        <div id="toDoSnippet">
+
+                            <p id="toDoUpdate">
+                                decorate classroom for easter
+                            </p>
+
+                        </div>
+
+                        <p style="margin-top: 10px">The To Do's</p>
+
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 
-        <div class="flex-grow">
-            <p id="myGreatDay"><strong>[Your Name]'s</strong> Great Day</p>
-        </div>
-        <div class="flex-grow">
-            <nav>
-                <a href="https://colletteap.github.io/gratitude-planner/subplan.html">Custom Substitute Plan</a>
-            </nav>
-        </div>
-    </header>
+        <div class="dynamicContainer">
+            <div class="containerColumn">
 
-    <div class="dynamicContainer">
-        <div class="containerColumn">
+                <div id="mainJournal" class="card">
 
-            <div id="countdown" class="card">
+                    <p>Journal it out</p>
 
-                <p>Holiday Countdown</p>
+                    <div class="playButton extraLeftPlayButton">
 
-            </div>
-
-            <div id="mainJournal" class="card">
-
-                <p>Journal it out</p>
-
-            </div>
-
-            <div id="coreValuesCard" class="card">
-
-                <p>Core Values</p>
-
-            </div>
-
-
-
-            <div id="selfCareCard" class="card">
-
-                <p>Self-Care Resources&nbsp;&nbsp;</p>
-
-
-            </div>
-
-            <div id="substituteCard" class="card">
-
-                <p>Customizable Sub Plan</p>
-
-            </div>
-
-            <div id="calendar" class="card">
-
-                <p>Monthly Calendar</p>
-
-            </div>
-
-            <div class="card specialDays">
-
-                <div id="specialDaysInfo">
-
-                </div>
-
-                <div class="specialDaysHome">
-
-                    <div id="specialDaysSnippet">
-
-                        <p id="specialDaysUpdate">
-                            my birthday
-                        </p>
+                        <img src="images/pressplay.png" width="20px" height="20px">
 
                     </div>
 
-                    <p style="margin-top: 10px">Special Days</p>
-
                 </div>
 
-            </div>
+                <div id="coreValuesCard" class="card">
 
-            <div id="toDoCard" class="card toDoCard">
+                    <p>Core Values</p>
 
-                <div id="toDoInfo">
+                    <div class="playButton cvPlayButton">
 
-                </div>
-
-                <div class="toDoHome">
-
-                    <div id="toDoSnippet">
-
-                        <p id="toDoUpdate">
-                            decorate classroom for easter
-                        </p>
+                        <img src="images/pressplay.png" width="20px" height="20px">
 
                     </div>
 
-                    <p style="margin-top: 10px">The To Do's</p>
-
                 </div>
 
             </div>
 
 
+            <div class="containerColumn">
+
+                <div id="countdown" class="card">
+
+                    <p>Summer Countdown</p>
+
+                    <div class="playSummerCountdown">
+
+                        <img src="images/pressplay.png" width="20px" height="20px">
+
+                    </div>
+
+                </div>
+
+                <div id="selfCareCard" class="card">
+
+                    <p>Self-Care Resources&nbsp;&nbsp;</p>
+
+                    <div class="playButton">
+
+                        <img src="images/pressplay.png" width="20px" height="20px">
+
+                    </div>
+
+                </div>
+
+                <div id="substituteCard" class="card">
+
+                    <p>Customizable Sub Plan</p>
+
+                    <div class="playSubPlan">
+
+                        <img src="images/pressplay.png" width="20px" height="20px">
+
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 
+    </div>
 
 
+    <div id="myJournal" class="hiddenDiv">
 
+        <div class="paddingJournal">
 
-        <div class="containerColumn width">
-            <div id="quote-container">
-                <div id="randomQuote">
-                    <h1 id="randomPhrase"></h1>
+            <div class="journalHeading">
 
-                </div>
-            </div>
-
-            <div id="myJournal" class="hiddenDiv">
-
-                <div class="paddingJournal">
-
-                    <div class="journalHeading">
-
-                        <strong style="color: white; font-family: 'DM Serif Display', serif;">Journal it
-                            Out</strong>
-
-                    </div>
-
-                    <div class="journalBody">
-
-                        <div id="prompts" onclick="displayJournalPrompt()">
-
-                            <img src="images/right_pointing_arrow.png" width="55px" height="50px" />
-                            click here for journal prompts
-                            <img src="images/left_pointing_arrow.png" width="55px" height="50px" />
-
-                        </div>
-
-                        <textarea placeholder="Your thoughts.." id="input" class="caveat-font"></textarea>
-
-                    </div>
-
-                    <div style="margin-left: 350px;">
-
-                        <button id="saveButton">Save</button>
-
-                    </div>
-
-                </div>
+                <strong style="color: white; font-family: AlegreyaLight">Journal it Out</strong>
 
             </div>
 
-            <div id="myCoreValues" class="hiddenDiv">
+            <div class="journalBody">
 
-                <div class="paddingCoreValues">
+                <div id="prompts" onclick="displayJournalPrompt()">
 
-                    <h1 class="titleCoreValuesDiv">Core Values</h1>
-
-                    <div class="coreValuesInstructions">
-                        Click on words below to populate your 6 Core Values, you can deselect them by clicking on
-                        them
-                        again if
-                        you decide your values have changed
-
-                    </div>
-
-                    <div class="wordBank" class="columnWrapper">
-
-                        <div class="word">Accountability</div>
-                        <div class="word">Adventure</div>
-                        <div class="word">Altruism</div>
-                        <div class="word">Ambition</div>
-                        <div class="word">Authenticity</div>
-                        <div class="word">Balance</div>
-                        <div class="word">Beauty</div>
-                        <div class="word">Belonging</div>
-                        <div class="word">Career</div>
-                        <div class="word">Caring</div>
-                        <div class="word">Commitment</div>
-                        <div class="word">Community</div>
-                        <div class="word">Connection</div>
-                        <div class="word">Contribution</div>
-                        <div class="word">Courage</div>
-                        <div class="word">Creativity</div>
-                        <div class="word">Curiosity</div>
-                        <div class="word">Ethics</div>
-                        <div class="word">Faith</div>
-                        <div class="word">Family</div>
-                        <div class="word">Financial Stability</div>
-                        <div class="word">Freedom</div>
-                        <div class="word">Fun</div>
-                        <div class="word">Generosity</div>
-                        <div class="word">Grace</div>
-                        <div class="word">Gratitude</div>
-                        <div class="word">Growth</div>
-                        <div class="word">Health</div>
-                        <div class="word">Honesty</div>
-                        <div class="word">Humor</div>
-                        <div class="word">Independence</div>
-                        <div class="word">Job security</div>
-                        <div class="word">Joy</div>
-                        <div class="word">Leadership</div>
-                        <div class="word">Learning</div>
-                        <div class="word">Love</div>
-                        <div class="word">Nature</div>
-                        <div class="word">Reliability</div>
-                        <div class="word">Resourcefulness</div>
-                        <div class="word">Respect</div>
-                        <div class="word">Self-discipline</div>
-                        <div class="word">Self-respect</div>
-                        <div class="word">Service</div>
-                        <div class="word">Simplicity</div>
-                        <div class="word">Spirituality</div>
-                        <div class="word">Success</div>
-                        <div class="word">Teamwork</div>
-                        <div class="word">Travel</div>
-                        <div class="word">Truth</div>
-                        <div class="word">Understanding</div>
-                        <div class="word">Wealth</div>
-                        <div class="word">Wholeheartedness</div>
-                        <div class="word">Wisdom</div>
-
-                    </div>
-
-                    <div class="cvLink">
-
-                        <a href="https://brenebrown.com/resources/dare-to-lead-list-of-values/" target="_blank"
-                            title="Open Brene Brown Link" class="cvLink">Complete Values List
-                            found at BreneBrown.com</a>
-
-                    </div>
-
-                    <h2 class="titleSixCoreValues">Your Top Six Core Values:</h2>
-
-                    <div class="cardContainer yourListContainer">
-
-                        <div class="selectedWords"></div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div id="monthlyCalendarDiv" class="hiddenDiv calendar">
-
-                <div class="header">
-
-                    <button id="prevMonth">&lt;</button>
-
-                    <h2 id="monthYear"></h2>
-
-                    <button id="nextMonth">&gt;</button>
+                    <img src="images/right_pointing_arrow.png" width="55px" height="50px" />
+                    click here for journal prompts 
+                    <img src="images/left_pointing_arrow.png" width="55px" height="50px" />
 
                 </div>
 
-                <div id="daysOfMonth">
-
-                </div>
+                <textarea placeholder="Your thoughts.." id="input" class="indie"></textarea>
 
             </div>
 
-            <div id="selfCareContainerDiv" class="hiddenDiv">
-                <h1 style="text-align: center; color: white;">Self Care Resources</h1>
-                <div id="containerSC">
+            <div style="margin-left: 350px;">
 
-                    <div class="cardSC">
-                        <p1><strong>when you need a break</strong></p1>
-                        <div class="breakContainer">
-                            <div class="breakContainer">
-                                <div class="columnContainer">
-                                    <p class="breakTitle">Primary</p>
+                <button id="saveButton">Save</button>
 
-                                    <a href="https://youtu.be/3KhH8n5tN48" target="_blank">
-                                        <img src="images/ArtHub.png" alt="Art Hub for Kids Link"
-                                            class="art imgBorder" />
-                                    </a>
-                                    <p class="breakTitle">Elementary</p>
-                                    <a href="https://youtube.com/playlist?list=PLmIHwWY0hiuwtfCnPXD1GJ-Zf9akeGiL3"
-                                        target="_blank">
-                                        <img src="images/KLT.png" alt="KLT Link to Earth Sciences Video"
-                                            class="klt imgBorder" />
-                                    </a>
-                                </div>
-                                <div class="breakContainer">
-                                    <div class="columnContainer">
-                                        <p class="breakTitle">Jr. High </p>
-                                        <a href="https://youtube.com/playlist?list=PLcKdsEL9Vqh5MSJ_-Q9ujOmFzCvL6VY-V"
-                                            target="_blank">
-                                            <img src="images/ted.png" alt="TED Link" class="ted imgBorder" />
-                                        </a>
-                                        <p class="breakTitle">High School</p>
-                                        <a href="https://youtu.be/OmJ-4B-mS-Y" target="_blank">
-                                            <img src="images/dos.png" alt="Domain of Science Link"
-                                                class="dos imBorder" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
 
-                    <div class="cardSC">
-                        <p1><strong>when you feel stuck</strong></p1>
-                        <div class="breakContainer">
-                            <div class="breakContainer">
-                                <div class="columnContainer">
-                                    <p class="breakTitle">Videos</p>
-                                    <a href="https://brenebrown.com/videos/" target="_blank">
-                                        <img src="images/bb.png" alt="Link to Brene Brown Videos"
-                                            class="bb imgBorder" />
-                                    </a>
-                                    <a href="https://www.youtube.com/watch?v=05IUStIy_wc" target="_blank">
-                                        <img src="images/eckart.png" alt="Link to Eckhart Tolle Video"
-                                            class="eckart imgBorder" />
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="breakContainer">
-                                <div class="columnContainer">
-                                    <p class="breakTitle">Meditations</p>
-                                    <a href="https://www.ted.com/talks/gloria_chan_packer_work_is_not_your_family_jan_2022"
-                                        target="_blank">
-                                        <img src="images/ted.png"
-                                            alt="Link to take you to Work is not your family TED Talk"
-                                            class="ted imgBorder" />
-                                    </a>
-                                    <a href="https://insighttimer.com/sarahblondin/guided-meditations/learning-to-surrender"
-                                        target="_blank">
-                                        <img src="images/insight.png" alt="Link to Insight Timer Meditation"
-                                            class="insight imgBorder" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </div>
 
-                    <div class="cardSC">
-                        <p1><strong>when you need community</strong></p1>
-                        <div class="breakContainer">
-                            <div class="columnContainer">
-                                <p class="breakTitle">FB</p>
-                                <a href="https://www.facebook.com/groups/607148596068041/" target="_blank">
-                                    <img src="images/fbpublic.png"
-                                        alt="Link to Public Facebook First Year Teacher's Mentor Group"
-                                        class="fb imgBorder" />
-                                </a>
-                            </div>
-                            <div class="columnContainer">
-                                <p class="breakTitle">Blogs</p>
-                                <a href="https://www.burnedinteacher.com/blog" target="_blank">
-                                    <img src="images/burnedin.png" alt="Link to Burned In Teacher Website"
-                                        class="burnedin imgBorder" />
-                                </a>
-                                <a href="https://teacherwellnesscenter.com/blog/tag/teacher+burnout" target="_blank">
-                                    <img src="images/wellness.png" alt="Link to Teacher Wellness Website"
-                                        class="wellness imgBorder" />
-                                </a>
-                            </div>
-                            <div class="columnContainer">
-                                <p class="breakTitle">Pinterest</p>
-                                <a href="https://www.pinterest.ca/collydane/substitute-collection/" target="_blank">
-                                    <img src="images/pinterest.png" alt="Link to Pinterest for Teacher Resources"
-                                        class="pinterest imgBorder" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+    </div>
 
-                    <div class="cardSC">
-                        <p1><strong>when you need to remember that you're not alone</strong></p1>
-                        <div class="breakContainer">
-                            <div class="columnContainer">
-                                <p class="breakTitle">Book</p>
-                                <a href="https://brenebrown.com/books-audio/" target="_blank">
-                                    <img src="images/book.png" alt="Link to Brene Brown Book"
-                                        class="bookBB imgBorder" />
-                                </a>
-                            </div>
-                            <div class="columnContainer">
-                                <p class="breakTitle">Podcasts</p>
-                                <a href="https://www.ashleystahl.com/podcast-categories/mindset/" target="_blank">
-                                    <img src="images/youturn.png" alt="Link to Ashley Stahl Website"
-                                        class="youturn imgBorder" />
-                                </a>
-                                <a href="https://gabbybernstein.com/podcast/" target="_blank">
-                                    <img src="images/gabby.png" alt="Link to Gabby Bernstein's Podcast"
-                                        class="gabby imgBorder" />
-                                </a>
-                            </div>
-                            <div class="columnContainer">
-                                <p class="breakTitle">Meditation</p>
-                                <a href="https://insighttimer.com/sarahblondin/guided-meditations/i-love-you-i-am-listening"
-                                    target="_blank">
-                                    <img src="images/insight.png" alt="Link to Insight Timer Meditation"
-                                        class="insight imgBorder" />
-                                </a>
-                            </div>
-                        </div>
+    <div id="myCoreValues" class="hiddenDiv">
 
-                    </div>
+        <div class="paddingCoreValues">
 
-                </div>
+            <h1 class="titleCoreValuesDiv">Core Values</h1>
+
+            <div class="coreValuesInstructions">
+                Click on words below to populate your 6 Core Values, you can deselect them by clicking on them again if
+                you decide your values have changed
+
+            </div>
+
+            <div class="wordBank" class="columnWrapper">
+
+                <div class="word">Accountability</div>
+                <div class="word">Adventure</div>
+                <div class="word">Altruism</div>
+                <div class="word">Ambition</div>
+                <div class="word">Authenticity</div>
+                <div class="word">Balance</div>
+                <div class="word">Beauty</div>
+                <div class="word">Belonging</div>
+                <div class="word">Career</div>
+                <div class="word">Caring</div>
+                <div class="word">Collaboration</div>
+                <div class="word">Commitment</div>
+                <div class="word">Community</div>
+                <div class="word">Connection</div>
+                <div class="word">Contribution</div>
+                <div class="word">Courage</div>
+                <div class="word">Creativity</div>
+                <div class="word">Curiosity</div>
+                <div class="word">Ethics</div>
+                <div class="word">Faith</div>
+                <div class="word">Family</div>
+                <div class="word">Financial Stability</div>
+                <div class="word">Freedom</div>
+                <div class="word">Fun</div>
+                <div class="word">Generosity</div>
+                <div class="word">Grace</div>
+                <div class="word">Gratitude</div>
+                <div class="word">Growth</div>
+                <div class="word">Home</div>
+                <div class="word">Health</div>
+                <div class="word">Honesty</div>
+                <div class="word">Humility</div>
+                <div class="word">Humor</div>
+                <div class="word">Independence</div>
+                <div class="word">Job security</div>
+                <div class="word">Joy</div>
+                <div class="word">Leadership</div>
+                <div class="word">Learning</div>
+                <div class="word">Love</div>
+                <div class="word">Nature</div>
+                <div class="word">Reliability</div>
+                <div class="word">Resourcefulness</div>
+                <div class="word">Respect</div>
+                <div class="word">Self-discipline</div>
+                <div class="word">Self-respect</div>
+                <div class="word">Service</div>
+                <div class="word">Simplicity</div>
+                <div class="word">Spirituality</div>
+                <div class="word">Success</div>
+                <div class="word">Teamwork</div>
+                <div class="word">Travel</div>
+                <div class="word">Truth</div>
+                <div class="word">Understanding</div>
+                <div class="word">Wealth</div>
+                <div class="word">Wholeheartedness</div>
+                <div class="word">Wisdom</div>
+
+            </div>
+
+            <div class="cvLink">
+
+                <a href="https://brenebrown.com/resources/dare-to-lead-list-of-values/" target="_blank"
+                    title="Open Brene Brown Link" class="cvLink">Complete Values List
+                    found at BreneBrown.com</a>
+
+            </div>
+
+            <h2 class="titleSixCoreValues">Your Top Six Core Values:</h2>
+
+            <div class="cardContainer yourListContainer">
+
+                <div class="selectedWords"></div>
+
             </div>
         </div>
     </div>
+
+    <div id="monthlyCalendarDiv" class="hiddenDiv calendar">
+
+        <div class="header">
+
+            <button id="prevMonth">&lt;</button>
+
+            <h2 id="monthYear"></h2>
+
+            <button id="nextMonth">&gt;</button>
+
+        </div>
+
+        <div id="daysOfMonth">
+
+        </div>
+
+    </div>
+
+    <div id="selfCareContainerDiv" class="hiddenDiv">
+        <h1 style="text-align: center; color: white;">Self Care Resources</h1>
+        <div id="containerSC">
+
+            <div class="cardSC">
+                <p1><strong>when you need a break</strong></p1>
+                <div class="breakContainer">
+                    <div class="breakContainer">
+                        <div class="columnContainer">
+                            <p class="breakTitle">Primary</p>
+
+                            <a href="https://youtu.be/3KhH8n5tN48" target="_blank">
+                                <img src="images/ArtHub.png" alt="Art Hub for Kids Link" class="art imgBorder" />
+                            </a>
+                            <p class="breakTitle">Elementary</p>
+                            <a href="https://youtube.com/playlist?list=PLmIHwWY0hiuwtfCnPXD1GJ-Zf9akeGiL3"
+                                target="_blank">
+                                <img src="images/KLT.png" alt="KLT Link to Earth Sciences Video"
+                                    class="klt imgBorder" />
+                            </a>
+                        </div>
+                        <div class="breakContainer">
+                            <div class="columnContainer">
+                                <p class="breakTitle">Jr. High </p>
+                                <a href="https://youtube.com/playlist?list=PLcKdsEL9Vqh5MSJ_-Q9ujOmFzCvL6VY-V"
+                                    target="_blank">
+                                    <img src="images/ted.png" alt="TED Link" class="ted imgBorder" />
+                                </a>
+                                <p class="breakTitle">High School</p>
+                                <a href="https://youtu.be/OmJ-4B-mS-Y" target="_blank">
+                                    <img src="images/dos.png" alt="Domain of Science Link" class="dos imBorder" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardSC">
+                <p1><strong>when you feel stuck</strong></p1>
+                <div class="breakContainer">
+                    <div class="breakContainer">
+                        <div class="columnContainer">
+                            <p class="breakTitle">Videos</p>
+                            <a href="https://brenebrown.com/videos/" target="_blank">
+                                <img src="images/bb.png" alt="Link to Brene Brown Videos" class="bb imgBorder" />
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=05IUStIy_wc" target="_blank">
+                                <img src="images/eckart.png" alt="Link to Eckhart Tolle Video"
+                                    class="eckart imgBorder" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="breakContainer">
+                        <div class="columnContainer">
+                            <p class="breakTitle">Meditations</p>
+                            <a href="https://www.ted.com/talks/gloria_chan_packer_work_is_not_your_family_jan_2022"
+                                target="_blank">
+                                <img src="images/ted.png" alt="Link to take you to Work is not your family TED Talk"
+                                    class="ted imgBorder" />
+                            </a>
+                            <a href="https://insighttimer.com/sarahblondin/guided-meditations/learning-to-surrender"
+                                target="_blank">
+                                <img src="images/insight.png" alt="Link to Insight Timer Meditation"
+                                    class="insight imgBorder" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardSC">
+                <p1><strong>when you need community</strong></p1>
+                <div class="breakContainer">
+                    <div class="columnContainer">
+                        <p class="breakTitle">FB</p>
+                        <a href="https://www.facebook.com/groups/607148596068041/" target="_blank">
+                            <img src="images/fbpublic.png"
+                                alt="Link to Public Facebook First Year Teacher's Mentor Group" class="fb imgBorder" />
+                        </a>
+                    </div>
+                    <div class="columnContainer">
+                        <p class="breakTitle">Blogs</p>
+                        <a href="https://www.burnedinteacher.com/blog" target="_blank">
+                            <img src="images/burnedin.png" alt="Link to Burned In Teacher Website"
+                                class="burnedin imgBorder" />
+                        </a>
+                        <a href="https://teacherwellnesscenter.com/blog/tag/teacher+burnout" target="_blank">
+                            <img src="images/wellness.png" alt="Link to Teacher Wellness Website"
+                                class="wellness imgBorder" />
+                        </a>
+                    </div>
+                    <div class="columnContainer">
+                        <p class="breakTitle">Pinterest</p>
+                        <a href="https://www.pinterest.ca/collydane/substitute-collection/" target="_blank">
+                            <img src="images/pinterest.png" alt="Link to Pinterest for Teacher Resources"
+                                class="pinterest imgBorder" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardSC">
+                <p1><strong>when you need to remember that you're not alone</strong></p1>
+                <div class="breakContainer">
+                    <div class="columnContainer">
+                        <p class="breakTitle">Book</p>
+                        <a href="https://brenebrown.com/books-audio/" target="_blank">
+                            <img src="images/book.png" alt="Link to Brene Brown Book" class="bookBB imgBorder" />
+                        </a>
+                    </div>
+                    <div class="columnContainer">
+                        <p class="breakTitle">Podcasts</p>
+                        <a href="https://www.ashleystahl.com/podcast-categories/mindset/" target="_blank">
+                            <img src="images/youturn.png" alt="Link to Ashley Stahl Website"
+                                class="youturn imgBorder" />
+                        </a>
+                        <a href="https://gabbybernstein.com/podcast/" target="_blank">
+                            <img src="images/gabby.png" alt="Link to Gabby Bernstein's Podcast"
+                                class="gabby imgBorder" />
+                        </a>
+                    </div>
+                    <div class="columnContainer">
+                        <p class="breakTitle">Meditation</p>
+                        <a href="https://insighttimer.com/sarahblondin/guided-meditations/i-love-you-i-am-listening"
+                            target="_blank">
+                            <img src="images/insight.png" alt="Link to Insight Timer Meditation"
+                                class="insight imgBorder" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
 
     <script src="project1.js" defer></script>
 

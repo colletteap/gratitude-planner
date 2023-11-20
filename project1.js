@@ -30,6 +30,10 @@ const countdowns = [
     message: 'Happy Long Weekend'
   },
   {
+    date: new Date('2023-12-22T00:00:00'),
+    message: 'Happy Holidays'
+  },
+  {
     date: new Date('2024-03-22T00:00:00'),
     message: 'Happy Easter'
   },
