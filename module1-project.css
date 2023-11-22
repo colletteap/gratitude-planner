@@ -55,6 +55,7 @@ h1 {
   justify-content: center;
   font-family: 'AlegreyaLight', sans serif;
   align-self: center;
+  font-size: 50px;
 }
 
 #specialDaysSnippet {
@@ -123,13 +124,13 @@ h1 {
   display: flex;
   background: #D5B795;
   color: #000000;
-  text-align: left;
   align-items: flex-end;
   text-transform: capitalize;
   width: 100%;
   height: 100px;
-  min-width: 200px;
-  font-size: 24px;
+  min-width: 500px;
+  max-width: 700px;
+  font-size: 30px;
   cursor: pointer;
   border-radius: 5px;
   padding-left: 10px;
@@ -160,7 +161,7 @@ h1 {
   display: flex;
   content: 'Space will autopopulate when text is entered into Monthly Calendar';
   font-family: 'AlegreyaLight', sans-serif;
-  font-size: 14px;
+  font-size: 26px;
   color: black;
   opacity: 0;
   height: 200px;
