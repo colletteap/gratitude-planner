@@ -21,7 +21,7 @@
 
 body {
     font-family: 'DM Serif Display', serif;
-    background-color: #99A985;
+    background-color: #dedacf;
 }
 
 h1 {
@@ -39,7 +39,7 @@ h2 {
 h3 {
     margin-bottom: 0px;
     margin-top: 2px;
-    text-align: center;
+    text-align: left;
     text-decoration: dotted;
 }
 
@@ -53,10 +53,15 @@ input {
     width: auto;
 }
 
+label {
+    padding-left: 8px;
+    padding-top: 8px;
+}
+
 
 button {
     border-style: double;
-    border-radius: 4px;
+    border-radius: 15px;
     margin-bottom: 1px;
     font-family: 'Montserrat', sans-serif;
     background-color: #35645E;
@@ -67,9 +72,10 @@ button {
 .mainContainer {
     max-width: 1000px; 
     margin: 0 auto;
-    border: 2px solid #35645E; 
+    border: 2px solid #35645E;
+    border-radius: 15px;; 
     padding: 20px;
-    background-color: #dedacf;
+    background-color: #fff;
 }
 
 #infoBox {
@@ -79,7 +85,7 @@ button {
     border-radius: 10px;
     width: 600px;
     height: 130px;
-    background-color: #778899;
+    background-color: #8B3B59;
     font-family: 'Montserrat', sans-serif;
     display: none;
 }
@@ -94,15 +100,22 @@ button {
     font-family: 'Montserrat', sans-serif;
 }
 
+.infoText {
+    color:#fff;
+}
+
 #homepageButton {
     margin: 0 auto;
     margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #8B3B59;
     color:#fff;
     font-weight: lighter;
     font-size: 29px;
     border:#fff 1px solid;
-    width: 1040px;
+    border-radius: 15px;;
+    width:fit-content;
     height: 50px;
     cursor: pointer;
 }
@@ -302,7 +315,7 @@ label {
 #teacherName {
     background-color: #fff;
     height: 25px;
-    width: 355px;
+    width: 365px;
     border-radius: 3px;
     border: solid;
     padding: 3px;
@@ -325,7 +338,7 @@ label {
 }
 
 .dateWidth {
-    width: 150px;
+    width: 160px;
 }
 
 .day {
@@ -334,7 +347,7 @@ label {
     border-radius: 3px;
     border: solid;
     padding: 3px;
-    width: 70px;
+    width: 80px;
 }
 
 #containerContacts {
@@ -348,7 +361,7 @@ label {
 #computerInfo {
     background-color: #fff;
     height: 100px;
-    width: 355px;
+    width: 395px;
     border-radius: 3px;
     border: solid;
 }
@@ -356,7 +369,7 @@ label {
 #helpfulContacts {
     background-color: #fff;
     height: 100px;
-    width: 355px;
+    width: 395px;
     border-radius: 3px;
     border: solid;
 }
@@ -575,11 +588,11 @@ label {
     flex-flow: row wrap;
     align-self: center;
     background-color: #fff;
-    width: 650px;
+    width: 725px;
     height: 150px;
     margin: 0px;
     padding: 0px;
-    justify-content: space-between;
+    justify-content: flex-start;
     border: solid black 1.5px;
 }
 
@@ -619,7 +632,7 @@ label {
     width: 120px;
     align-self: center;
     margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding: 5px;
 }
 
 .insertTime {
@@ -632,8 +645,10 @@ label {
     border-right: solid black 1px;
     display: flex;
     flex-flow: row wrap;
+    padding-left: 10px;
 }
 
 .resourcesNeeded {
     width: 220px;
+    padding-left: 10px;
 }
