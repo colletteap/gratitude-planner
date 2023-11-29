@@ -548,6 +548,24 @@ opacity: 1;
   text-overflow: ellipsis;
 }
 
+.parentSC {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  width: 100vw;
+}
+
+.childSC {
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    scroll-snap-align: center;
+}
+
 p1 {
   text-align: center;
   letter-spacing: 1px;
