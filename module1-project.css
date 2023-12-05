@@ -710,3 +710,38 @@ p1 {
 .imgBorder {
   border: black solid 2px;
 }
+
+.buttonNeedBreak {
+
+}
+
+#needBreakContainer {
+
+}
+
+.buttonFeelStuck {
+
+}
+
+#feelStuckContainer{
+
+}
+
+.buttonNeedCommunity {
+
+}
+
+#needCommunityContainer {
+
+}
+
+.buttonNotAlone {
+
+}
+
+#notAloneContainer {
+
+}
+
+/* need to create javascript that when clicked on,
+ buttons will reveal respective containers with buttons inside
