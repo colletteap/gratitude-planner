@@ -442,3 +442,6 @@ if (toDoUpdate.textContent.trim() !== "") {
 
   toDoInfo.style.display = 'block';
 }
+
+//Add Click Event Listeners to self care 4 boxes to show divs once clicked and hide button divs
+
