@@ -124,14 +124,13 @@ h1 {
   text-transform: capitalize;
   width: 100%;
   height: 100px;
-  min-width: 300px;
+  min-width: 350px;
   max-width: 450px;
   font-size: 30px;
   cursor: pointer;
   border-radius: 5px;
   padding-left: 10px;
   transition: transform 0.3s;
-  flex-grow: 1;
 }
 
 .card:hover {
@@ -161,7 +160,7 @@ h1 {
   color: black;
   opacity: 0;
   height: 200px;
-  width: 150px;
+  width: 200px;
   font-weight: bolder;
   justify-content: center;
 }
@@ -187,7 +186,7 @@ h1 {
   color: black;
   opacity: 0;
   height: 200px;
-  width: 150px;
+  width: 200px;
   font-weight: bolder;
   justify-content: center;
 }
