@@ -79,6 +79,7 @@ h1 {
   justify-content: center;
   gap: 2.5rem;
   padding: 20px;
+  flex-shrink: 5;
 }
 
 #randomPhrase {
@@ -682,6 +683,7 @@ p1 {
   border-radius: 5px;
   height: 455px;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 
