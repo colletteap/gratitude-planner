@@ -173,11 +173,13 @@ h1 {
   margin: 0;
   padding-bottom: 15px;
   text-align: right;
+  padding-top: 17px;
 }
 
 .tdTextAlign {
   margin: 0;
   text-align: right;
+  padding-top: 17px;
 }
 
 #toDoInfo::before {
