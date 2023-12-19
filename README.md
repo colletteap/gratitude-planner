@@ -33,10 +33,15 @@ Some days can be more challenging than others. By focusing on gratitude and orga
 
   ![Customized Substitute Planner](./images/result.gif)
 ******
-  # **Appreciation**
+
+# **Motivation**
+I am a teacher with the shared experience of burnout; so, I created this gratitude webpage designed to help teachers get a little more organized, focus a little more on themselves and hopefully make their life work balance a little more balanced.
+
+
+# **Appreciation**
   
   Big thanks to @samwise-nl for coaching me through the Get Coding program so far!
 ******
-  # **Freebies**
+# **Freebies**
   #### Click here for free [While You Were Away PDF](./While_You_Were_Away.pdf)
   ![While You Were Away](./images/welcomeback.png)
