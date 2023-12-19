@@ -1,4 +1,5 @@
 // Randomly generated affirmations
+// constant variables, an array, random number generation, DOM manipulation and text.Content all help the random positive affirmations to appear on the webpage each time it is loaded.
 
 const phrases = [
   'I know how to bring direction and order into my life',
@@ -22,7 +23,8 @@ const randomPhrase = phrases[randomIndex];
 const phraseElement = document.getElementById('randomPhrase');
 phraseElement.textContent = randomPhrase;
 
-// Summer Countdown
+// Date Countdown
+// countdown array, variables initialized (let), update dountown function, countdown calc, display countdown, DOM manipulation click listener.
 
 const countdowns = [
   {
