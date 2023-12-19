@@ -203,8 +203,9 @@ h1 {
 .arrowImg {
   width: 25px;
   height: 25px;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-bottom: 160px;
+  margin-right: 50px;
 }
 
 .playButton {
