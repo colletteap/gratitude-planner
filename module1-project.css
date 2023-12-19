@@ -106,7 +106,6 @@ h1 {
   align-items: center;
   column-gap: 30px;
   row-gap: 30px;
-  flex-grow: 1;
 }
 
 .dynamicContainer {
