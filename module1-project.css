@@ -160,7 +160,7 @@ h1 {
   color: black;
   opacity: 0;
   height: 200px;
-  width: 200px;
+  width: 140px;
   font-weight: bolder;
   justify-content: center;
 }
@@ -172,10 +172,12 @@ h1 {
 .spTextAlignTop {
   margin: 0;
   padding-bottom: 15px;
+  text-align: right;
 }
 
 .tdTextAlign {
   margin: 0;
+  text-align: right;
 }
 
 #toDoInfo::before {
@@ -186,7 +188,7 @@ h1 {
   color: black;
   opacity: 0;
   height: 200px;
-  width: 200px;
+  width: 140px;
   font-weight: bolder;
   justify-content: center;
 }
