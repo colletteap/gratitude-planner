@@ -135,6 +135,7 @@ function displayJournalPrompt() {
 }
 
 // Hide/Show Journal, Monthly Calendar, Core Values and Self Care Divs
+// Created an array with each element having an object with two properties, click event listeners added to all html elements in sections array and calls the showDivById function, then showDivById function is defined.
 
 
 const sections = [
