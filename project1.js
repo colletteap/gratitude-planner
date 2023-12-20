@@ -163,6 +163,7 @@ function showDivById(divId) {
 }
 
 //Saving to Local Storage
+// Define variables, retrieve data if any had been saved and click event listener for saveButton/calling function
 
 const dataInput = document.getElementById('input');
 const saveButton = document.getElementById('saveButton');
