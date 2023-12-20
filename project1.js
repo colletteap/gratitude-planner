@@ -114,9 +114,10 @@ document.getElementById("substituteCard").addEventListener("click", function () 
 
 
 //Give Prompt Options
+// Create journal prompts with an array, create function to eventually call the prompts up, create randomized generation of array, function to display journal prompts with DOM manipulation to connect HTML element to function.
 
 function selectJournalPrompt() {
-  var prompts = [
+  const prompts = [
     'How am I feeling today?',
     'What do I need today?',
     'What am I grateful for today?',
@@ -124,12 +125,12 @@ function selectJournalPrompt() {
     'The affirmation that would help me most today is...',
   ];
 
-  var randomIndex = Math.floor(Math.random() * prompts.length);
+  const randomIndex = Math.floor(Math.random() * prompts.length);
   return prompts[randomIndex];
 }
 
 function displayJournalPrompt() {
-  var statementElement = document.getElementById('prompts');
+  const statementElement = document.getElementById('prompts');
   statementElement.textContent = selectJournalPrompt();
 }
 
