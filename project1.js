@@ -24,7 +24,7 @@ const phraseElement = document.getElementById('randomPhrase');
 phraseElement.textContent = randomPhrase;
 
 // Date Countdown
-// countdown array, variables initialized (let), update dountown function, countdown calc, display countdown, DOM manipulation click listener.
+// countdown array, variables initialized (let), update countown function, countdown calc, display countdown, DOM manipulation click listener.
 
 const countdowns = [
   {
@@ -83,6 +83,7 @@ countdownElement.addEventListener('click', () => {
 
 
 //Customize Planner Name
+// Reference a HTML element, create variable for local storage so if user has already entered a name it loads upon page load, then add click event listener to update the name using if else function.
 
 const para = document.getElementById('myGreatDay');
 
@@ -105,6 +106,7 @@ function updateName() {
 };
 
 // Clickable Sub Plan Div
+//DOM manipulation and click event listener to begin the function of opening a link in a new window.
 
 document.getElementById("substituteCard").addEventListener("click", function () {
   window.location.href = "https://colletteap.github.io/gratitude-planner/subplan.html", "_blank";
