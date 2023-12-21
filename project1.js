@@ -424,6 +424,7 @@ specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
 });
 
 // Showing and Hiding Info Message on Special Days
+//Assign variables for both sections of specialDaysUpdate and specialDaysInfo then an if then else statement checks to see if there is text inside the specialDaysUpdate, if so, specialDaysInfo is set to 'none' display and specialDaysUpdate is set to 'block' so it is shown.
 
 let specialDaysUpdate = document.getElementById('specialDaysUpdate');
 let specialDaysInfo = document.getElementById('specialDaysInfo');
@@ -437,6 +438,7 @@ if (specialDaysUpdate.textContent.trim() !== "") {
 }
 
 //Showing and Hiding Info Message on To Do
+//Assign variables for both sections of toDoUpdate and toDoInfo then an if then else statement checks to see if there is text inside the toDoUpdate, if so, toDoInfo is set to 'none' display and toDoUpdate is set to 'block' so it is shown.
 
 let toDoUpdate = document.getElementById('toDoUpdate');
 let toDoInfo = document.getElementById('toDoInfo');
@@ -449,6 +451,3 @@ if (toDoUpdate.textContent.trim() !== "") {
 
   toDoInfo.style.display = 'block';
 }
-
-//Add Click Event Listeners to self care 4 boxes to show divs once clicked and hide button divs
-
