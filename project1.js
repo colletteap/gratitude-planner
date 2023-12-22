@@ -242,43 +242,61 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 // Monthly Calendar
+// Assign variables to HTML elements
 
 const monthYearElement = document.getElementById("monthYear");
 const prevMonthButton = document.getElementById("prevMonth");
 const nextMonthButton = document.getElementById("nextMonth");
 const daysContainer = document.getElementById("daysOfMonth");
 
+//Assign variable for the current date, current month and current year
+
 const currentDate = new Date();
 let currentMonth = currentDate.getMonth();
 let currentYear = currentDate.getFullYear();
 
+//This function updates the calendar to the current date in a readable format
+
 function updateCalendar() {
   monthYearElement.textContent = new Date(currentYear, currentMonth).toLocaleDateString('en-CA', { month: 'long', year: 'numeric' });
+
+//These variables represent the day of the week the first day of the months falls on and how many days are in the current month
 
   const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
   const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
  
+  //Clearing previous content
   
   daysContainer.innerHTML = '';
+
+//This loop creates empty day elements and appends them to the calendar before the first day of the month
 
   for (let i = 0; i < firstDayOfMonth; i++) {
     const emptyDay = document.createElement("div");
     daysContainer.appendChild(emptyDay);
   }
 
+//This loop creates day elements for each day in the month and creates a CSS class called day 
+
   for (let day = 1; day <= daysInMonth; day++) {
     const dayElement = document.createElement("div");
     dayElement.classList.add("day");
     dayElement.textContent = day;
 
+//This element is created to hold input from the to-do items and given its own CSS class
+
     const toDoContainer = document.createElement("div");
     toDoContainer.classList.add("calendarToDoContainer");
+
+//A textarea is created for to-do input, given its own class, a placeholder and initial value is retrieved from local storage based on current year, month and day
 
     const toDoInput = document.createElement("textarea");
     toDoInput.classList.add("calendarToDoInput");
     toDoInput.placeholder = "Enter to-do items...";
     toDoInput.value = localStorage.getItem(`toDo-${currentYear}-${currentMonth}-${day}`) || '';
     
+//This function limits the input into to-do element to 20 values and updates local storage and calls it with an input event listener
+
     function limittdInput(event) {
         const tdinput = event.target;
         if (tdinput.value.length > 20) {
@@ -318,12 +336,19 @@ function updateCalendar() {
       localStorage.setItem(`notes-${currentYear}-${currentMonth}-${day}`, notesInput.value);
     })
 
+//Appending elements to containers
+
     toDoContainer.appendChild(toDoInput);
     specialEventsContainer.appendChild(specialEventsInput);
     notesContainer.appendChild(notesInput)
+
+//Appending containers to day elements
+
     dayElement.appendChild(toDoContainer);
     dayElement.appendChild(specialEventsContainer);
     dayElement.appendChild(notesContainer);
+
+//Appending day element to calendar container
 
     daysContainer.appendChild(dayElement);
   };
@@ -331,6 +356,8 @@ function updateCalendar() {
 
 
 updateCalendar();
+
+//Click event listener to move the months back when previous month button is clicked
 
 prevMonthButton.addEventListener("click", () => {
   currentMonth--;
@@ -340,6 +367,8 @@ prevMonthButton.addEventListener("click", () => {
   }
   updateCalendar();
 });
+
+//Click event listener to move the months ahead when next month button is clicked
 
 nextMonthButton.addEventListener("click", () => {
   currentMonth++;
