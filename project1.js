@@ -386,11 +386,16 @@ todoTextareas.forEach((calendarToDoInput, _index) => {
 });
 
 // Local Storage, Updating and Blur event listener for Special Days
+// Variables assigned for HTML elements specialDaysUpdate on Special Days card, calendarSpecial EventsInput in calendar array.
 
 const topSpecialDaysDiv = document.getElementById("specialDaysUpdate");
 const specialDaysTextareas = document.querySelectorAll(".calendarSpecialEventsInput");
 
+//Parse stringified data into useable javascript objects
+
 const recentSpecialDaysTexts = JSON.parse(localStorage.getItem("recentSpecialDaysTexts")) || [];
+
+//Function to create a list from the stored data above into the topSpecialDaysDiv
 
 function updateSpecialDaysList() {
   topSpecialDaysDiv.innerHTML = `<ul>${recentSpecialDaysTexts.map(text => `<li>${text}</li>`).join('')}</ul>`;
@@ -399,7 +404,11 @@ function updateSpecialDaysList() {
   
 }
 
+//Calls function
+
 updateSpecialDaysList();
+
+//Blur event listener added to each textarea element on the class specialDaysTextareas which is in an array so that the specialDaysSnippet is shown, and if the textarea is not an empty string, text is added to the special days update bby calling the function again, no more than 6 textarea elements 
 
 specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
   calendarSpecialEventsInput.addEventListener("blur", function () {
@@ -416,6 +425,8 @@ specialDaysTextareas.forEach((calendarSpecialEventsInput, _index) => {
     }
 //
     updateSpecialDaysList();
+
+    //Store the list array in local storage by turning it into a string
 
     localStorage.setItem("recentSpecialDaysTexts", JSON.stringify(recentSpecialDaysTexts));
     }
