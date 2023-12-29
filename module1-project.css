@@ -146,10 +146,14 @@ h1 {
   cursor:crosshair;
 }
 
-
 .specialDays {
   background-color: #7c919a;
   height: 250px;
+  cursor: none;
+}
+
+.specialDays:hover {
+  transform: none;
 }
 
 #specialDaysInfo::before {
@@ -266,6 +270,11 @@ align-items: center;
 .toDoCard {
   background-color: #e1b469;
   height: 250px;
+  cursor: none;
+}
+
+.toDoCard:hover {
+  transform: none;
 }
 
 #coreValuesCard {
