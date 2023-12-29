@@ -149,7 +149,7 @@ h1 {
 .specialDays {
   background-color: #7c919a;
   height: 250px;
-  cursor: none;
+  cursor: alias;
 }
 
 .specialDays:hover {
@@ -270,7 +270,7 @@ align-items: center;
 .toDoCard {
   background-color: #e1b469;
   height: 250px;
-  cursor: none;
+  cursor:alias;
 }
 
 .toDoCard:hover {
