@@ -159,10 +159,10 @@ display: flex;
 .specialDays {
   background-color: #fff;
   border-color: #7c919a;
-  border-bottom: none;
-  border-top:none;
+  border-right: solid;
+  border-left: solid;
   height: 250px;
-  cursor: alias;
+  cursor: default;
 }
 
 .specialDays:hover {
@@ -188,16 +188,13 @@ display: flex;
 
 .spTextAlignTop {
   margin: 0;
-  padding-bottom: 15px;
-  text-align: right;
-  padding-top: 17px;
+  text-align: center;
   color: #000000;
 }
 
 .tdTextAlign {
   margin: 0;
-  text-align: right;
-  padding-top: 17px;
+  text-align: center;
   color: #000000;
 }
 
@@ -285,10 +282,10 @@ align-items: center;
 .toDoCard {
   background-color: #fff;
   border-color: #e1b469;
-  border-bottom: none;
-  border-top:none;
+    border-right: solid;
+  border-left: solid;
   height: 250px;
-  cursor:alias;
+  cursor: default;
 }
 
 .toDoCard:hover {
