@@ -146,6 +146,16 @@ h1 {
   cursor:crosshair;
 }
 
+.sdColumn {
+display: flex;
+  flex-direction: column;
+}
+
+.tdColumn {
+display: flex;
+  flex-direction: column;
+}
+
 .specialDays {
   background-color: #fff;
   border-color: #7c919a;
@@ -181,12 +191,14 @@ h1 {
   padding-bottom: 15px;
   text-align: right;
   padding-top: 17px;
+  color: #000000;
 }
 
 .tdTextAlign {
   margin: 0;
   text-align: right;
   padding-top: 17px;
+  color: #000000;
 }
 
 #toDoInfo::before {
