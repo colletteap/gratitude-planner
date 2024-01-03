@@ -147,7 +147,10 @@ h1 {
 }
 
 .specialDays {
-  background-color: #7c919a;
+  background-color: #fff;
+  border-color: #7c919a;
+  border-bottom: none;
+  border-top:none;
   height: 250px;
   cursor: alias;
 }
@@ -268,7 +271,10 @@ align-items: center;
 }
 
 .toDoCard {
-  background-color: #e1b469;
+  background-color: #fff;
+  border-color: #e1b469;
+  border-bottom: none;
+  border-top:none;
   height: 250px;
   cursor:alias;
 }
