@@ -146,16 +146,11 @@ h1 {
   cursor:crosshair;
 }
 
-.sdColumn {
+.sdColumn, tdColumn {
 display: flex;
   align-items: flex-start;
   flex-direction: column;
-}
-
-.tdColumn {
-display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+  margin:0;
 }
 
 .specialDays {
