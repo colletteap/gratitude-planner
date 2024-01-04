@@ -187,13 +187,13 @@ display: flex;
 }
 
 .spTextAlignTop {
-  margin: 0;
+  text: bolder;
   text-align: center;
   color: #000000;
 }
 
 .tdTextAlign {
-  margin: 0;
+  text:bolder;
   text-align: center;
   color: #000000;
 }
