@@ -20,7 +20,7 @@
 
 .alegreyaLight {
   font-family: 'AlegreyaLight', sans-serif;
-}
+} 
 
 .indie {
   font-family: 'Indie', sans-serif;
@@ -176,7 +176,7 @@ display: flex;
   padding: 5px;
   color: black;
   opacity: 0;
-  height: 130px;
+  height: 80px;
   width: 200px;
   font-weight: bolder;
   justify-content: center;
@@ -202,11 +202,11 @@ display: flex;
   display:flex;
   content: 'Space will autopopulate when text is entered into Monthly Calendar';
   font-family: 'AlegreyaLight', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   padding: 5px;
   color: black;
   opacity: 0;
-  height: 130px;
+  height: 80px;
   width: 200px;
   font-weight: bolder;
   justify-content: center;
@@ -492,10 +492,10 @@ opacity: 1;
 #toDoUpdate,
 #specialDaysUpdate {
   flex-grow: 2;
-  height: 100px;
+  height: 160px;
   width: 250px;
   color: black;
-  font-size: 14px;
+  font-size: 16px;
   word-wrap: break-word;
   text-overflow: ellipsis;
   white-space: pre-wrap;
