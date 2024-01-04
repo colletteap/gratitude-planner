@@ -158,11 +158,9 @@ display: flex;
 
 .specialDays {
   background-color: #fff;
-  border-color: #7c919a;
-  border-right: solid;
-  border-left: solid;
+  border: solid #7c919a;
   height: 250px;
-  cursor: default;
+  cursor: none;
 }
 
 .specialDays:hover {
@@ -281,11 +279,9 @@ align-items: center;
 
 .toDoCard {
   background-color: #fff;
-  border-color: #e1b469;
-    border-right: solid;
-  border-left: solid;
+  border: solid #e1b469;
   height: 250px;
-  cursor: default;
+  cursor: none;
 }
 
 .toDoCard:hover {
