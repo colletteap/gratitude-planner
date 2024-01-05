@@ -206,15 +206,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+// Define a set to keep track of selected words
+  const selectedWordsSet = new Set();
+  
   wordBank.forEach(function (word) {
     word.addEventListener('click', function () {
       if (wordCount < 6) {
+        //Check is the word has already been selected
+        if (!selectedWordsSet.has(word.textContent)) {
         const selectedWord = document.createElement('div');
         selectedWord.textContent = word.textContent;
         selectedWord.classList.add('word');
         selectedWord.classList.add('hoverDelete');
         selectedWord.style.order = order;
         selectedWords.appendChild(selectedWord);
+
+        // Add the word to the selected words set
+          selectedWordsSet.add(word.textContent);
 
         // Save data to local storage
         const data = {
@@ -226,6 +234,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         order++;
         wordCount++;
+        }
       }
     });
   });
