@@ -186,15 +186,22 @@ display: flex;
 }
 
 .spTextAlignTop {
-  text: bolder;
+  font-weight: bolder;
+  text-align: center;
+  color: #000000;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.tdTextAlign {
+  font-weight: bolder;
   text-align: center;
   color: #000000;
 }
 
-.tdTextAlign {
-  text:bolder;
-  text-align: center;
-  color: #000000;
+.listInfo {
+ color: black;
+ font-size: 10px;
 }
 
 #toDoInfo::before {
