@@ -191,20 +191,20 @@ display: flex;
   color: #000000;
   margin-left: 35px;
   margin-right: 35px;
-  margin-bottom: none;
+  margin-bottom: 0px;
 }
 
 .tdTextAlign {
   font-weight: bolder;
   text-align: center;
   color: #000000;
-  margin-bottom: none;
+  margin-bottom: 0px;
 }
 
 .listInfo {
  color: black;
  font-size: 12px;
-  margin-top: none;
+  margin-top: 0px;
   margin-left: 35px;
   margin-right: 35px;
 }
