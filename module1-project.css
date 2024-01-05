@@ -191,17 +191,22 @@ display: flex;
   color: #000000;
   margin-left: 35px;
   margin-right: 35px;
+  margin-bottom: none;
 }
 
 .tdTextAlign {
   font-weight: bolder;
   text-align: center;
   color: #000000;
+  margin-bottom: none;
 }
 
 .listInfo {
  color: black;
- font-size: 10px;
+ font-size: 12px;
+  margin-top: none;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 #toDoInfo::before {
