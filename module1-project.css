@@ -159,6 +159,8 @@ display: flex;
   height: 240px;
   width: 260px;
   cursor: none;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .specialDays:hover {
@@ -283,6 +285,8 @@ align-items: center;
   height: 240px;
   width: 260px;
   cursor: none;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .toDoCard:hover {
