@@ -167,16 +167,15 @@ display: flex;
   transform: none;
 }
 
-#specialDaysInfo::before {
+#specialDaysInfo {
   display: flex;
   content: 'Monthly Calendar List Items...';
   font-family: 'AlegreyaLight', sans-serif;
   font-size: 18px;
   padding: 5px;
-  color: black;
+  color: #af6e34;
   height: 80px;
   width: 200px;
-  font-weight: bolder;
   justify-content: center;
 }
 
@@ -184,7 +183,7 @@ display: flex;
   font-weight: bolder;
   text-align: center;
   color: #000000;
-  margin-left: 35px;
+  margin-left: 70px;
   margin-right: 35px;
   margin-bottom: 0px;
 }
@@ -204,16 +203,15 @@ display: flex;
   margin-right: 35px;
 }
 
-#toDoInfo::before {
+#toDoInfo {
   display:flex;
   content: 'Monthly Calendar List Items...';
   font-family: 'AlegreyaLight', sans-serif;
   font-size: 18px;
   padding: 5px;
-  color: black;
+  color: #af6e34;
   height: 80px;
   width: 200px;
-  font-weight: bolder;
   justify-content: center;
 }
 
