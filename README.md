@@ -1,6 +1,6 @@
 # ![The Happy Teacher Planner](./images/HTPlogo.png)
 ![Mobile and Desktop Friendly](./images/MobileDesktopreadme.png)
-![Happy Planner video](/images/HTPIntro.gif)
+![Happy Planner video](/images/HTPtop.gif)
 
 Some days can be more challenging than others. By focusing on gratitude and organization, that challenge is easier to overcome. <br>
 
