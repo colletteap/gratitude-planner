@@ -171,11 +171,11 @@ display: flex;
   display: flex;
   content: 'Monthly Calendar List Items...';
   font-family: 'AlegreyaLight', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   padding: 5px;
   color: black;
   height: 80px;
-  width: 200px;
+  width: 240px;
   justify-content: center;
 }
 
@@ -198,7 +198,7 @@ display: flex;
 .listInfo {
  color: black;
  font-size: 13px;
-  margin-top: 0px;
+  margin-top: 15px;
   margin-left: 35px;
   margin-right: 35px;
   text-align: center;
@@ -209,7 +209,7 @@ display: flex;
   display:flex;
   content: 'Monthly Calendar List Items...';
   font-family: 'AlegreyaLight', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   padding: 5px;
   color: black;
   height: 80px;
