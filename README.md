@@ -7,6 +7,9 @@ Some days can be more challenging than others. By focusing on gratitude and orga
 # **Website Link**
 - This site is available through github pages: [The Happy Teacher Planner](https://colletteap.github.io/gratitude-planner/)
 
+# **Live Demo Link**
+[The Happy Teacher Planner Demo](https://www.loom.com/share/4285ca82764d45dba2352d8ecff350c0?sid=d4615154-2745-462f-820a-09a8d68388f2)
+
 # **Website Instructions**
 
 #### Use <strong>My Great Day</strong> to customize the name of your planner.
